@@ -1,0 +1,44 @@
+{
+  "name": "TGBAnyObject",
+  "version": "0.1.0",
+  "summary": "A short description of TGBAnyObject.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/956409020/TGBAnyObject",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "95640902012": "95640902012@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/956409020/TGBAnyObject.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "public_header_files": [
+    "Sources/**/*.h",
+    "Sources/*/**/*.h",
+    "Sources/*/*/**/*.h",
+    "Sources/*/*/*/**/*.h",
+    "Sources/*/*/*/*/**/*.h",
+    "Sources/*/*/*/*/*/**/*.h",
+    "Sources/*/*/*/*/*/*/**/*.h"
+  ],
+  "source_files": [
+    "Sources/**",
+    "Sources/*/**",
+    "Sources/*/*/**",
+    "Sources/*/*/*/**",
+    "Sources/*/*/*/*/**",
+    "Sources/*/*/*/*/*/**",
+    "Sources/*/*/*/*/*/*/**"
+  ],
+  "requires_arc": true,
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ]
+}

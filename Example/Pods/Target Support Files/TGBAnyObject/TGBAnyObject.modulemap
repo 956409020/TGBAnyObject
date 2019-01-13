@@ -1,0 +1,6 @@
+framework module TGBAnyObject {
+  umbrella header "TGBAnyObject-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'TGBAnyObject_Example' do
+  pod 'TGBAnyObject', :path => '../'
+
+  target 'TGBAnyObject_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

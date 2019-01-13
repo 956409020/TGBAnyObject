@@ -1,0 +1,6 @@
+framework module Pods_TGBAnyObject_Example {
+  umbrella header "Pods-TGBAnyObject_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

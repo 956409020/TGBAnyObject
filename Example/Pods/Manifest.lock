@@ -1,0 +1,16 @@
+PODS:
+  - TGBAnyObject (0.1.0)
+
+DEPENDENCIES:
+  - TGBAnyObject (from `../`)
+
+EXTERNAL SOURCES:
+  TGBAnyObject:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TGBAnyObject: 411d0bf7109f66c19531723e10bb3e91a730025a
+
+PODFILE CHECKSUM: 09882d511a6cd4641d6dc4f34518391c1effcd1f
+
+COCOAPODS: 1.5.3

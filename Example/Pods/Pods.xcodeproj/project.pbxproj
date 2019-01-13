@@ -1,0 +1,1693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		010BA7F75D937544C72322C032CE874A /* TGBScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = 975ED708135A648DE4CDDCEC9A6720A1 /* TGBScheduler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		019C2C6049367EC0732CD770387AA520 /* TGBDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BA65E6D347A4720985D214B0B72E4D /* TGBDatabaseAdditions.m */; };
+		01DD64ACF582888B1195311E0EFC0FAD /* TGBDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = A35BD999F0CE4566DD70ACD5AFADBCC4 /* TGBDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02271386F40457A9AF47994DD6214D3D /* TGBPush_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 793EA2268563298395236534BF2D9065 /* TGBPush_Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03345E2525005D095E7842252D1CDD73 /* TGBSaveOption_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A65412C33D8CE391E7C90E28D01A363 /* TGBSaveOption_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0544D0D3AEC65A5BACA888D74ADD6E42 /* TGBRequestManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EFD77BD219B72B47942830DD415981C /* TGBRequestManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05B3120B34BAD45E51ED718D6081CC8C /* TGBDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E6774088E544A7383251C8AF2BE3ACB /* TGBDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0609B0C968181423E9DAA6A229ECB204 /* TGBAnalyticsSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F01759392AB66A30FE99492D6D2B1B7 /* TGBAnalyticsSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A174B70D3A5F9DA650CB33339FDFBDC /* TGBRouter_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 93A11D8C3F049C22EFE8C28140A47230 /* TGBRouter_Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E0DAAA906D041DC7DDDBFD3481E50B2 /* TGBURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AC253E0387188F6A2F0C9BE834CC15 /* TGBURLRequestSerialization.m */; };
+		0EC075231337EF17BF40C104B2F7752D /* Pods-TGBAnyObject_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B5A3D843748B3D45CB315A43B30CED56 /* Pods-TGBAnyObject_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10DDE13DCAEA5217ECA54EE941FE2B70 /* TGBDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 64E13E60DC984CC768E330FEE948F2B9 /* TGBDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1128244A736AAB31C4389CF22F27C606 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */; };
+		11983416666A15053401C2A79D87E140 /* TGBCaptcha.h in Headers */ = {isa = PBXBuildFile; fileRef = 20F1326B14B7B546E2AE0743E0194C00 /* TGBCaptcha.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		119B7DC8826C54DD0EF7A0FC65DB3DA9 /* TGBPersistenceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6121B919F3870AE1C91B0321A9F5EB /* TGBPersistenceUtils.m */; };
+		11C47235D2F30ACBEB78FB314B1D86A7 /* TGBUserAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = 29CEE76A2793ADBCB72F08E1C3F1A149 /* TGBUserAgent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		161CB914B26E99D34FC55361EC2B1F83 /* TGBUsered_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = FB1FACFD05040502C4BF2FCC89738E35 /* TGBUsered_Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1640FA98D0329E93379AE090C6B94354 /* TGBHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A67CCDF1816865BE93B457270579BFB /* TGBHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16A2A78581A72068FC90AAB47863DFAF /* TGBRelation.h in Headers */ = {isa = PBXBuildFile; fileRef = E158D2B14A56BD5214597713ED79E649 /* TGBRelation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17237BACB72A4500CF96DFA2D22BE534 /* TGBURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F52AD17002F70F05769380BF2A586D67 /* TGBURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1ADC30466C5457227DDBFB528B6E51FF /* TGBPush.h in Headers */ = {isa = PBXBuildFile; fileRef = 01586250391EFFB7F09D1D5A99410E26 /* TGBPush.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B7BA9D93DCC440C9BD7C1467E7D4CB9 /* TGBSearchQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 12B8C745A0A52EBE85F0914A045042F3 /* TGBSearchQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C660539E9B9AC47D6B01F646E1B4D8E /* TGBCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = 22BF89E7CB413CDE107997CB40FB1955 /* TGBCloud.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D718F02972D1F269A32C63B49A8A88F /* TGBDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B0A3D747913C242534B2431CCA751376 /* TGBDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E196D7B5AA1367249DA0D00D5919F00 /* TGBNSDictionary+LeanCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = C23D88CBA256AE4220CF7A0BF199AC5F /* TGBNSDictionary+LeanCloud.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E636F51402F695AC43920EF939A24D5 /* TGBStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 487FF97CBC1739FA2846071449DE430E /* TGBStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EBB4BFF9DF8D0234C5F4EE2B8145693 /* TGBResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 270C10B0771426E267A07B12A86C75CC /* TGBResultSet.m */; };
+		1F40D446E180A8799FEC67CE8A8F2CD8 /* TGBLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 96361FA8567B1A35223670DA3A5389E9 /* TGBLocationManager.m */; };
+		1F93E59087B2EF54BB8D81B5DD1FC3F9 /* TGBKeyValueSQL.h in Headers */ = {isa = PBXBuildFile; fileRef = EB3EC5F8081BDED6C6720F06554DB99A /* TGBKeyValueSQL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		214F77568328950C37677EA5180C4132 /* TGBExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A2FF1F62ABB86A6F6D28EE69D81A87 /* TGBExceptionHandler.m */; };
+		26C380798E9329F45A8B4289E8AE65AE /* TGBAnyObject.h in Headers */ = {isa = PBXBuildFile; fileRef = FF145A20B9738CD68CBF3EAF602B1F73 /* TGBAnyObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		280D3D275E82B59120E63E8280FE1FE4 /* TGBOSCloud_Art.inc in Headers */ = {isa = PBXBuildFile; fileRef = 21492DE2A5BB7B90C72F73B538A8D34A /* TGBOSCloud_Art.inc */; settings = {ATTRIBUTES = (Project, ); }; };
+		284A86E9EB2C2FA64B39FF1142C1CA76 /* TGBFriendQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B0E3A8E6A273E56BAC87227E18BD4 /* TGBFriendQuery.m */; };
+		28DC1C2832667D19A614A7A788E58D7B /* TGBAnyObject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C9532F765AA6226FC4D20A3F5A1C24 /* TGBAnyObject-dummy.m */; };
+		2987B76123AB33A49B72A74E1D2F9764 /* TGBAnyObject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 938CE6F6AFCCB82E117799F91FCA3C55 /* TGBAnyObject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B879EFB9C2178787D9F94C86845F6DF /* TGBUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FC3F9605C0396EB41D44BEED29B7F2E /* TGBUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F71512C0A25CB7C5B3948AB421D60B4 /* TGBEXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = BE426F39B890AABC2272F61B71333630 /* TGBEXTScope.m */; };
+		30DE23ABBC07F150F183F83D854416FB /* TGBAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = E91D5B324BA1CF94E35674A93C661D54 /* TGBAnalytics.m */; };
+		30E397F94B4235BF6DCA26A93D546EF4 /* Pods-TGBAnyObject_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30BFD79CD2D2B2831F0901039A912E5B /* Pods-TGBAnyObject_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		310C4E169DCFACECE694BA94036123F7 /* TGBDuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1BD58D5F111922F9C5E8D35F4D846 /* TGBDuration.m */; };
+		31B1B28D726A7D9D3634EA36F0940765 /* TGBHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D01B8CA18FDE8087330E48451BD7E55 /* TGBHTTPSessionManager.m */; };
+		31F2481CC285720E3D7E07FAF8B64469 /* TGBNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A5AB2F30051964C51FDBE208A8345850 /* TGBNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3445D269C1456F8A697F939237B164CF /* TGBAnalytics_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 31889843AE204C4489C8CEA27353A370 /* TGBAnalytics_Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		373A7DEB3E111C20E5A766573A4B6EE5 /* TGBFileTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7CA46B4149F63A2DCB9CBA20E8F034 /* TGBFileTaskManager.m */; };
+		37511FBC2FCF6C0B37F556217CDDEC19 /* TGBQuery_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FD64519EE836AF415F7B65865304EB1 /* TGBQuery_Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37F8440B2F6EE0DC816D2136A29D982B /* TGBKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = A1491775739D4AE1D738F17355E389DA /* TGBKeychain.m */; };
+		390352926F9DB93F600047EC5DDCAB4B /* TGBInstallation.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D0BF0ABCDE322029D0A84C6A26FABC /* TGBInstallation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C05C932B10AB657FDD07110CB951FB8 /* TGBRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2C8D0C6BD00CE265AFFF2FBEE168CC /* TGBRequestManager.m */; };
+		3C38EFAAE9D9C8D1370CE0BC4479F7B5 /* TGBRole_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D047B7CC8FC1122B8580C6CC4044A1F /* TGBRole_Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42A9750060A54BFFFB53560B876A772F /* TGBSearchSortBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD00818817B34A7656B188B0C7070DE /* TGBSearchSortBuilder.m */; };
+		4495064E5CCDA7B7D08131133CEBA89A /* TGBEXTScope.h in Headers */ = {isa = PBXBuildFile; fileRef = C642338A5260A0CA50221D0143E2DD3E /* TGBEXTScope.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48D72D36137152874EDBD2E10CB7229D /* TGBURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D0DA0BBA0A949A5CEB5724D495DF08 /* TGBURLSessionManager.m */; };
+		51DC366832E57FBEDABBF4EAE157E183 /* TGBNetworkStatistics.h in Headers */ = {isa = PBXBuildFile; fileRef = DB992834EF976782BBC7A67C59A28520 /* TGBNetworkStatistics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52141145B662F31B06E5D49E0D2C6897 /* TGBKeyValueStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 024038A4127EA2CEF584A05B4091772E /* TGBKeyValueStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5371419A6FEA54C1D3AA1C2A9C456836 /* TGBUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7AFB351B1F48BCCB833410731D0025 /* TGBUtils.m */; };
+		54DF7D528D3441E63522DBE59CBB510B /* TGBURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 567824046926D853FF5451765B6D1FED /* TGBURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57CA20AECFFCFE67B76FBEC46E1F4710 /* TGBSaveOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E3366CDF4660AFC04580579FA09741 /* TGBSaveOption.m */; };
+		596F90CE18F251F11A1CB5CD5875D1F2 /* TGBExceptionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = BBCD042EBE371C292911859468EC4C00 /* TGBExceptionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ACF6EAB9CE5BB424CA59ACB53A7B8E8 /* TGBFriendQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BF1E9EDA5B1DBC4C2EA96CAEF75AB8F /* TGBFriendQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E02AB42830049AC5A0C05D9F55096B2 /* TGBFileTaskManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8049FF9DAB601954DED598EEA44CC152 /* TGBFileTaskManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ECFA2035773B4C397F7208315F27C84 /* TGBMessageKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B48479AA47387A802719EE2CD50200 /* TGBMessageKit.m */; };
+		5FCCDF4EB76A61B915F8A99975D39BC6 /* TGBCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9B30E0534FF8B67088D278D4C31D85 /* TGBCloud.m */; };
+		6040902170088132A539FE371685D7DA /* TGBCloudQueryResult_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = B4D3701DEE72BD30FCCAE389408FCD32 /* TGBCloudQueryResult_Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60CB50A6436D7B31CD64BBC05C6594F8 /* TGBURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 937D3E33BEFD918B811CB6EAD179303A /* TGBURLConnection.m */; };
+		619FABCE594B1C89E540ADD6BB194215 /* TGBRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4773EB725D8B453AFB447A2A1D70DA94 /* TGBRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61C64D5347262078AAD92C09464D04FE /* TGBDuration.h in Headers */ = {isa = PBXBuildFile; fileRef = 8303357B583F181BBAF44349542E97BE /* TGBDuration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67407CB126A75758CDCBF82693AF62CE /* TGBDatabaseMigrator.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C6FD4AA74EF3D1B361712E505A6E60 /* TGBDatabaseMigrator.m */; };
+		6750A1854AAF6D27B75FD7ABC74ACF33 /* TGBFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7BFC6AFCE64424A2BE36ECBF8DC568 /* TGBFile.m */; };
+		67D5F5FF5F09E3ACA5A1D9E6233F7C2E /* TGBFile_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 792DD28B0B83605242040831A3DB970E /* TGBFile_Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		684177304A08F0962CE67FD67748B4F0 /* TGBConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 6335F0D53B815B94986C0E8CEBE2CC3A /* TGBConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69175FED713D83921B3A6B2EE0B1D4AF /* TGBAnalyticsSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 67749812D2561FA57D510EE90624CCAC /* TGBAnalyticsSession.m */; };
+		6A5E96AE151AB3FE91DF903FF03DB79A /* TGBSaveOption.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C1181F11091F6C5F0241054504ED59 /* TGBSaveOption.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B9E3ED1C748FE15CB0848F8704B21EB /* TGBFileQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C9222D302D11922140FC76D2F367A45 /* TGBFileQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BEF1BA9076114B27ED49E607988D008 /* TGBErrorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C696034A06CB27CDBD3EB8301178192 /* TGBErrorUtils.m */; };
+		6E4517C7BAAA5629DEF2E878E3600FCF /* TGBSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E220E95424F7BD926825F83594B0DA7 /* TGBSystemInfo.m */; };
+		7164A3AC8A8E3A9A72C303DC30FCABB9 /* TGBGlobal.h in Headers */ = {isa = PBXBuildFile; fileRef = 56611A59385D5BADFDE36498448707C7 /* TGBGlobal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71BC885F21552896A3BF8A717F7C7837 /* TGBPush.m in Sources */ = {isa = PBXBuildFile; fileRef = D0130FD99AD84DAB423680FA7B96A19A /* TGBPush.m */; };
+		72C33C186CB02774AEEEBA3394F7CA54 /* TGBSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3664EC82F5E7133298D7D1DABA271 /* TGBSecurityPolicy.m */; };
+		73C1B1EBB5C745E6240DF336E90F9F1E /* TGBStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841BAA8E4F29A10BECC713CAA8B63E5 /* TGBStatus.m */; };
+		76EF32DD8D5AD8EA4627D62FD8228661 /* TGBDatabaseMigrator.h in Headers */ = {isa = PBXBuildFile; fileRef = C21711D1FF57931973133374FF1451B0 /* TGBDatabaseMigrator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77A16AF0809C2725CFDA2494C6458E63 /* TGBNetworkStatistics.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3708F6178979AD72EEDE4DDD32FFD /* TGBNetworkStatistics.m */; };
+		790A3AA224B851B85ADBAB1F99E8F795 /* TGBSMS.h in Headers */ = {isa = PBXBuildFile; fileRef = 50F7E390047526532418303B2189F11C /* TGBSMS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		791573AD1CA81A37688A6160B3E1BE9F /* TGBRole.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F954E210DC1236DF8BD8BE83D70CA9A /* TGBRole.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CC5ABE16784B2AFD046FB4E0AD992F5 /* TGBHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EEDCD578A675A7B46BEB63167A7619FF /* TGBHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EC20BEC093D67610E2FA6AF978CA82A /* TGBCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 637CEB19BEC6AA280B0C6B710675772E /* TGBCacheManager.m */; };
+		7F3278A094FB8B44A5DE71E3B92DDB04 /* TGBURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F92DD3CB6EC0537D092BDBD771722F /* TGBURLResponseSerialization.m */; };
+		8057891A18A082194A607602185032D1 /* TGBURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = C898A144D6A141B414AE87CE6274C145 /* TGBURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8077DFF8826A5D6F034024C5898F2E30 /* TGBQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D4BBD50967BB53FF950199465B8C63 /* TGBQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8252C8716B307E2D3ADA6C2E753E33D1 /* TGBNSDictionary+LeanCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C828AEB917CB77C5B84AC38028F9C9 /* TGBNSDictionary+LeanCloud.m */; };
+		82FC55757366EB83726740DC0E143D5D /* TGBPersistenceUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = DA79601AC0AC4F30047C20B68C4AFB14 /* TGBPersistenceUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		832ED8FE67865663B7F0506046E069C7 /* TGBFileQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD299D6B2FE4DC463F0D18A6DC384FD /* TGBFileQuery.m */; };
+		84987CC34C6E5B3E879162A1A60967AB /* TGBAnalyticsActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 93116284E5E605799728904628F3E220 /* TGBAnalyticsActivity.m */; };
+		84F35ABE2C27AE5D70FD81B8420E901C /* TGBMessageKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 661D34C4209C8B68CFF45272D6E27818 /* TGBMessageKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89BEE9470FB935C52817111D99F05109 /* TGBObjectUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA700557F2D718C0609BDC7AC824390 /* TGBObjectUtils.m */; };
+		8A461682BD4FFA483CDA79E6F19D80F5 /* TGBPaasClient.h in Headers */ = {isa = PBXBuildFile; fileRef = FB3E4FE928929D4C5F90552D3F4DD03E /* TGBPaasClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BBE6BE9B831B49ABC973969F3B9D5F5 /* TGBKKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C4755032C6525307FBACFD5059CE1F73 /* TGBKKit.m */; };
+		8CC18A00D67A1946519A180C0EFA1EFB /* TGBCloudQueryResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E5375BA356BD64AD49775D8C080B3 /* TGBCloudQueryResult.m */; };
+		8DE282AA9C0436E06DCD0751043EB7AC /* TGBSSLChallenger.m in Sources */ = {isa = PBXBuildFile; fileRef = DE56C79B99000DAAB3D6300445B48F17 /* TGBSSLChallenger.m */; };
+		8F75B0AB30FD8725AB921A9041ADA11E /* TGBAnalyticsUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B2758B09E8BF30209EC14246133A24F /* TGBAnalyticsUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F802D1464EDE3A66A6E85435CE8A163 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */; };
+		8FF202308D63C6CBE0315104D144F398 /* TGBAnalyticsImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 68ED2386C563736D1B2E5B77AE7A86E6 /* TGBAnalyticsImpl.m */; };
+		90313B4383275E43AEEB6EF40A88D66F /* TGBDynamicObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 853C817F1DF637FF8B120B18795B131A /* TGBDynamicObject.m */; };
+		90B1B0950748B28C7A3A333C346C7A08 /* TGBACL_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 63EC2AD572D34511C3FE00DF53E3FBD2 /* TGBACL_Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92396BCBDF1B6ED028473D985A7FCC59 /* TGBDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB8E752A7AB517B0A2694BD2E030D0E /* TGBDatabase.m */; };
+		93510B6C0BB2B5944D31AAC0676D1833 /* TGBvailability.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CDA2580077A09A291BB7918B7E5D1F7 /* TGBvailability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94C29DF75E83440FCE167C26F71EA47A /* TGBAnonymousUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 635B01921923E030DB21FA11A762AEBE /* TGBAnonymousUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94EAD7663B4BB4364670DEC1BD6AD362 /* TGBCaptcha.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0895E08D114B99AC2D58AFDCAFCE44 /* TGBCaptcha.m */; };
+		973191BA869E824206BC64EEEE264556 /* TGBAnalyticsUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4E696EF6E62A102671014761268BB1 /* TGBAnalyticsUtils.m */; };
+		98C955FE4C98D66BC57FF6C1CBFCF35B /* TGBDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7502383252033A0650E6D1F2F61EB /* TGBDatabasePool.m */; };
+		9A2F6D43B12B3BE13B21CFCCEB1FA52F /* TGBDatabaseCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 82DF97B3FE9BA1C5FB8DEAA5A5422FEB /* TGBDatabaseCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AA71EBA08EF106A1A5709E19D455AA2 /* TGBSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 00782FE702AFE2AE77E439EDA59D27B8 /* TGBSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AA8DABF2ADDFF7544BF12F5702854E5 /* TGBKKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A73CE4727F55CCA77CE044E489D793E /* TGBKKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B2F950F270DD934CEC7C4E8BE377813 /* TGBFile.h in Headers */ = {isa = PBXBuildFile; fileRef = B98490C11F9AC66A8FC3C86648999204 /* TGBFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B35FC79F04FABF5BFEBE6B378E471C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E404AA6957590324067E330E0EC533 /* UIKit.framework */; };
+		9BD76B7F3FEB1218B65DE691125EFAEA /* TGBGeoPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 276929DA80ADCCC85710C255DB74E445 /* TGBGeoPoint.m */; };
+		9F8952BB35CE212D027F646919A06EA9 /* TGBRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 85F5D5D662FCA7BFF6640D8899E66F34 /* TGBRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4C211FE9A97CC054EAF3143E60175D8 /* TGBNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 677BA44F075700F3ABAC9C9E6D61536E /* TGBNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A511F3C66CA773FD963529C743BFC527 /* TGBObject_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = C4B9E37333229C39D85BA7D71260B3A5 /* TGBObject_Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7732FBC9A81729E4A60928741A054C7 /* TGBDynamicObject_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B6E9EE24CB03990941581F615A5110C /* TGBDynamicObject_Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB94752D00C274EFD5CDDD8624BEB6D3 /* TGBAnonymousUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9DFE9959DEAED9E26ABE6849F0D2A4 /* TGBAnonymousUtils.m */; };
+		AB9870E6657BEA355328D2B4F95CDEDA /* TGBPaasClient_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F8F0C4648166B8EB0312BBDA835CC3B /* TGBPaasClient_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB9A212C63325E80B0F1D27C6A97E048 /* TGBQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BB26FAFDC2CE0F32F32E949A1D4145 /* TGBQuery.m */; };
+		AC4B4D0D13F0A905CC44428F4B685F08 /* TGBScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B24EE2D5DFB4F79A7B92B3199F0FF82 /* TGBScheduler.m */; };
+		AD89F6651A1AB4D283A1116DB489976F /* TGBSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D461F8E9DB926B0F4B7C5C43D96527 /* TGBSwizzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B095925CA289641DB8B9E94DC92FE757 /* TGBSearchQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 991FA69ED8EC385C5F94BB97745F6F50 /* TGBSearchQuery.m */; };
+		B265CE516CE304102607FE6CDA83D388 /* TGBObjectUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A257B5F0CF5539E6CF91C9D8ED66ABA9 /* TGBObjectUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B291B163AE6B9C2974F8473084DCF7AE /* TGBObject.h in Headers */ = {isa = PBXBuildFile; fileRef = A408C651AFD1B49504AEE2F188248938 /* TGBObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2AB1109F3A6FF85E1B38C65DBA54C01 /* TGBmetamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 9953AC4F8EFECE74423C8135ABC08B34 /* TGBmetamacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B78A5FC16E82819580E611A26A911943 /* TGBDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB47AB8CCF72B82928B36923676D7D5 /* TGBDatabaseQueue.m */; };
+		B7B3E1ADF0FD90A7C47874F4622010E1 /* TGBDatabaseCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = EE64AF8EE990FE2ADE1A2A50464ACD9C /* TGBDatabaseCoordinator.m */; };
+		BB03DD788297DE8C37D51F77C4CE3507 /* TGBNSDictionary+LCHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 7024661BAE36E603EA83515D5026B664 /* TGBNSDictionary+LCHash.m */; };
+		BBEB83BC01D7A03B38B760D1B29D8B96 /* Pods-TGBAnyObject_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0B0BA16308FF7C90C75B6741D29A1C8 /* Pods-TGBAnyObject_Tests-dummy.m */; };
+		BCD7D19AAF150F31FF53273966ED2839 /* TGBSSLChallenger.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A5557883637FA16B248D5B8FD13847 /* TGBSSLChallenger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C11A82C428CB5574D9AA01760597021F /* TGBResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 985109E0D790D93665C84F2A97B36F85 /* TGBResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39B41E1F7FD8C78E5750FD3346B9E5F /* TGBNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 65739339883DCF9932C93F9B12CBA6B5 /* TGBNetworkReachabilityManager.m */; };
+		C3F8605B493DCFCF2279EF79CC23983E /* TGBSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = A1311F745D3F518975442E09CF13A474 /* TGBSwizzle.m */; };
+		C40BABECD3CC0517889AAFE5875B749F /* TGBSystemInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = E2253BBFAE5338FF095E1DA81F07F80B /* TGBSystemInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5651DE7A172EDC1800BA936A3D42DCE /* TGBSMS.m in Sources */ = {isa = PBXBuildFile; fileRef = E01615D1E8226DC9B47A7E5AA4A9B097 /* TGBSMS.m */; };
+		C665BBA0B78F64127623E92C22FBFF0B /* TGBMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 32F6C645D7C1C32CF5C1D8D54FF22D3D /* TGBMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CADF89D30B49A60E05557406062CF70E /* TGBPaasClient.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB40A1E9777C043A79EA15853DF7D41 /* TGBPaasClient.m */; };
+		CBE9F41C45B08594649CB111A584639C /* TGBACL.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F897318ACA67B02BAB992D46D11750 /* TGBACL.m */; };
+		CD7781C280A42F4EE68AB2DE5C1F7900 /* TGBUsered.h in Headers */ = {isa = PBXBuildFile; fileRef = 22552514C5E46A61B9630A1F40C8FC36 /* TGBUsered.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEBE6267E0CBF1AB7B2ED615B5AB80CF /* TGBSearchSortBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 412845155E71148EED07089C6473CD9F /* TGBSearchSortBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF0E973B6F864C092CF8F31B772FAE66 /* TGBCloudQueryResult.h in Headers */ = {isa = PBXBuildFile; fileRef = A1FCC48B3F477C93E99D463B4771B993 /* TGBCloudQueryResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D194E497820EC9FD4D368B08232B11C6 /* TGBErrorUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 6639A7E810271533B564AADC22D8477D /* TGBErrorUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D36B7EC6665504ECAD828B67F8C22213 /* TGBAnalyticsActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = B5EBE468ABA3AC8CD0864E7256E0DD57 /* TGBAnalyticsActivity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3E474DA46AE7AF13B23A2EA941C0660 /* TGBRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0AAB613B781175FB9DC07789CF54F /* TGBRouter.m */; };
+		D449DCB7366444385D0810039FAC0A17 /* TGBDatabaseCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 852DD0C69FB8A9CF3E97A8B690F8F344 /* TGBDatabaseCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4740D972E4F33480EE045E2F3EB7CE9 /* TGBKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F460B5FEECCAD86867DBD2832D911E7 /* TGBKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D577AA51AAC369FE794E872DD3E0E589 /* TGBInstallation.m in Sources */ = {isa = PBXBuildFile; fileRef = A539B18786499881A584B88037E4FD7F /* TGBInstallation.m */; };
+		D937830E7BD60E9DCDD2BCC7A2F87C1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */; };
+		D94569210C2C5F362F8543C5E65023AF /* TGBAnalyticsImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 96ECA9F104BB9960D114237AFFDF941E /* TGBAnalyticsImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF7A9350CFA978ED46AB14EB7EE935F2 /* TGBLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D1A77367AB24254F8FECB611AF64FA3A /* TGBLocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E25D47C164E2D4D441ADF146602909C1 /* TGBRole.m in Sources */ = {isa = PBXBuildFile; fileRef = D62E6AB1E58C49F399EABE0DED02B3A3 /* TGBRole.m */; };
+		E6E7C65F3FECD6F04CE28EC4AA9A001F /* TGBRelation_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AE6ABD843674A7A4E935E857881DE5D /* TGBRelation_Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9B8C0646DB8024F3F2BAEC5D7B3F917 /* TGBNSDictionary+LCHash.h in Headers */ = {isa = PBXBuildFile; fileRef = 925F0D05CAFCDE3C7A5AAE4A61D49B3D /* TGBNSDictionary+LCHash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB4C36EE57D55E409EA7C21A4B6F4B44 /* TGBReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 799E57EB95C7DA41DF39FEA2DB3A71E5 /* TGBReachability.m */; };
+		EE1D8ACB46BD226A3C35499E3755A5EC /* TGBKeyValueStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B60965C35EF626B4AAAA3B35011687D /* TGBKeyValueStore.m */; };
+		EF106B765C495213EEAF646320CC4CA9 /* TGBRelation.m in Sources */ = {isa = PBXBuildFile; fileRef = DD49EDA6B521D4A8E5A57DB27F0FAC13 /* TGBRelation.m */; };
+		EFC181F1208D26EBC8B9AF007C05CA8C /* TGBAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = B7FA4887FD2F523F1B8645E2632BFCEF /* TGBAnalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0EB349C6FF7E368E0BBBC35EFABC3AA /* TGBUsered.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A4B68DC308A2BA4709B15601577931 /* TGBUsered.m */; };
+		F1E8F649CA5543EAC02C932943663631 /* TGBURLConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 680629380E6E1A9FF1405446CD28E23B /* TGBURLConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F267D272D89DFA5D09B27FEE46282AE0 /* TGBCacheManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D3AEBE50F7182E552BB9A72B6039CF87 /* TGBCacheManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2F276DA26E40883F9DFE047F2E4EED1 /* TGBObject+Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = F631571CD06D8A708ED586F21B77C3B7 /* TGBObject+Subclass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F467343D19963057B013BAAA6E935328 /* TGBReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 5509714CBD2AA9BF489551F4EB7CDAF6 /* TGBReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F65C4DBBA85ABB86B8A37BB1706F9D62 /* TGBInstallation_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A4ED729217274E2BA87031C5931F24A /* TGBInstallation_Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6F05D69547B7DEB629A39C291E8AD69 /* TGBGeoPoint_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 05F4D12A450A4522DB295D4B3A0AB4B1 /* TGBGeoPoint_Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F77F1291F0439FE6AB4688CE291CEC06 /* TGBRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CF2A637EC7E96B94F09D5CF2CD2B5A /* TGBRequestOperation.m */; };
+		F781D1C931FE2DCB6ABF1D558D3B4F5C /* TGBDB.h in Headers */ = {isa = PBXBuildFile; fileRef = E2F8F80CAA470DDD98F5B88A00A9296C /* TGBDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7B0587D0FDBD402E1C3A0842F4CFD30 /* TGBDynamicObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8038017FAE7326E35BD3765370DB784E /* TGBDynamicObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA07E6DB6CD18EE3F3A313EDC4B963AF /* TGBGeoPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 52DAD0FFE0CC29705968AB87FC87DD7F /* TGBGeoPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA2460168263C68CB4532E032D1A30D7 /* Pods-TGBAnyObject_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6919D151C615D34E1F19BA3F5467B39E /* Pods-TGBAnyObject_Example-dummy.m */; };
+		FB2414EF15C6DF0D84F78B2398156FC2 /* TGBACL.h in Headers */ = {isa = PBXBuildFile; fileRef = A38210D8429A572390A8521C04C0D9D9 /* TGBACL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC2AC9A95DCB624FF69790761494F77A /* TGBSubclassing.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F263D0DB738C21ACE578369889ED73 /* TGBSubclassing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDA43FB519E9FF90EEDB259D58CBA333 /* TGBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB544ED589511391CD602AE42CC8101 /* TGBObject.m */; };
+		FEC837E1047FBD2AFEFC90579F1C5FAF /* TGBCloud_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = A1C1D6DA33BD006E03115843D41FC55D /* TGBCloud_Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		594D29D8981FE72EB0D48EC528528A3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBB8234D0D43CC361CF18873F7672B23;
+			remoteInfo = TGBAnyObject;
+		};
+		AACB84A9E989157ABF0C6503B7B1D329 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC4583377DE48A2120F7D437DC5F1000;
+			remoteInfo = "Pods-TGBAnyObject_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00782FE702AFE2AE77E439EDA59D27B8 /* TGBSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBSecurityPolicy.h; sourceTree = "<group>"; };
+		01586250391EFFB7F09D1D5A99410E26 /* TGBPush.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBPush.h; sourceTree = "<group>"; };
+		024038A4127EA2CEF584A05B4091772E /* TGBKeyValueStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBKeyValueStore.h; sourceTree = "<group>"; };
+		04C0AAB613B781175FB9DC07789CF54F /* TGBRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBRouter.m; sourceTree = "<group>"; };
+		05F4D12A450A4522DB295D4B3A0AB4B1 /* TGBGeoPoint_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBGeoPoint_Internal.h; sourceTree = "<group>"; };
+		0977C9A2BF1A41FAC94DCFB54A0F7339 /* Pods-TGBAnyObject_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TGBAnyObject_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0A4ED729217274E2BA87031C5931F24A /* TGBInstallation_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBInstallation_Internal.h; sourceTree = "<group>"; };
+		0B6E9EE24CB03990941581F615A5110C /* TGBDynamicObject_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBDynamicObject_Internal.h; sourceTree = "<group>"; };
+		0C867A26DBF1A43B323DD3E50B132593 /* TGBAnyObject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TGBAnyObject.modulemap; sourceTree = "<group>"; };
+		12B8C745A0A52EBE85F0914A045042F3 /* TGBSearchQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBSearchQuery.h; sourceTree = "<group>"; };
+		13C9532F765AA6226FC4D20A3F5A1C24 /* TGBAnyObject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TGBAnyObject-dummy.m"; sourceTree = "<group>"; };
+		17CBF6C4909810ED3BA7D50B0CD8F583 /* Pods-TGBAnyObject_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TGBAnyObject_Tests-resources.sh"; sourceTree = "<group>"; };
+		17CC801B89C7AE53630E0C70C6788914 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1841BAA8E4F29A10BECC713CAA8B63E5 /* TGBStatus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBStatus.m; sourceTree = "<group>"; };
+		18AE13E54D41DFDE4924E729B173D9D1 /* Pods_TGBAnyObject_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TGBAnyObject_Tests.framework; path = "Pods-TGBAnyObject_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A1721B91BB97D4287F6A70E2512AE2A /* Pods-TGBAnyObject_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TGBAnyObject_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1B24EE2D5DFB4F79A7B92B3199F0FF82 /* TGBScheduler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBScheduler.m; sourceTree = "<group>"; };
+		1D9B30E0534FF8B67088D278D4C31D85 /* TGBCloud.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBCloud.m; sourceTree = "<group>"; };
+		20D14330B378F21DA13D074875C836C0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20F1326B14B7B546E2AE0743E0194C00 /* TGBCaptcha.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBCaptcha.h; sourceTree = "<group>"; };
+		21492DE2A5BB7B90C72F73B538A8D34A /* TGBOSCloud_Art.inc */ = {isa = PBXFileReference; includeInIndex = 1; path = TGBOSCloud_Art.inc; sourceTree = "<group>"; };
+		21D0BF0ABCDE322029D0A84C6A26FABC /* TGBInstallation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBInstallation.h; sourceTree = "<group>"; };
+		22552514C5E46A61B9630A1F40C8FC36 /* TGBUsered.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBUsered.h; sourceTree = "<group>"; };
+		22BF89E7CB413CDE107997CB40FB1955 /* TGBCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBCloud.h; sourceTree = "<group>"; };
+		270C10B0771426E267A07B12A86C75CC /* TGBResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBResultSet.m; sourceTree = "<group>"; };
+		276929DA80ADCCC85710C255DB74E445 /* TGBGeoPoint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBGeoPoint.m; sourceTree = "<group>"; };
+		27EC84285127414935E9871C53DA39F0 /* TGBAnyObject-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TGBAnyObject-prefix.pch"; sourceTree = "<group>"; };
+		29CEE76A2793ADBCB72F08E1C3F1A149 /* TGBUserAgent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBUserAgent.h; sourceTree = "<group>"; };
+		2AD299D6B2FE4DC463F0D18A6DC384FD /* TGBFileQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBFileQuery.m; sourceTree = "<group>"; };
+		2CA1BD58D5F111922F9C5E8D35F4D846 /* TGBDuration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBDuration.m; sourceTree = "<group>"; };
+		2CDA2580077A09A291BB7918B7E5D1F7 /* TGBvailability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBvailability.h; sourceTree = "<group>"; };
+		2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		30BFD79CD2D2B2831F0901039A912E5B /* Pods-TGBAnyObject_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TGBAnyObject_Tests-umbrella.h"; sourceTree = "<group>"; };
+		31889843AE204C4489C8CEA27353A370 /* TGBAnalytics_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBAnalytics_Internal.h; sourceTree = "<group>"; };
+		32F6C645D7C1C32CF5C1D8D54FF22D3D /* TGBMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBMacros.h; sourceTree = "<group>"; };
+		3A0895E08D114B99AC2D58AFDCAFCE44 /* TGBCaptcha.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBCaptcha.m; sourceTree = "<group>"; };
+		3A67CCDF1816865BE93B457270579BFB /* TGBHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBHelpers.h; sourceTree = "<group>"; };
+		3A73CE4727F55CCA77CE044E489D793E /* TGBKKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBKKit.h; sourceTree = "<group>"; };
+		3A939364D4FCCAF140F606295B113249 /* Pods-TGBAnyObject_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TGBAnyObject_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3AC3664EC82F5E7133298D7D1DABA271 /* TGBSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBSecurityPolicy.m; sourceTree = "<group>"; };
+		3B14A62407FA6672ABF3AE0CAFDE4211 /* TGBSwizzle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBSwizzle.h; sourceTree = "<group>"; };
+		3F2B2AB80937E2A2F7A77C0952621C3D /* TGBAnyObject.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TGBAnyObject.xcconfig; sourceTree = "<group>"; };
+		3FC3F9605C0396EB41D44BEED29B7F2E /* TGBUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBUtils.h; sourceTree = "<group>"; };
+		412845155E71148EED07089C6473CD9F /* TGBSearchSortBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBSearchSortBuilder.h; sourceTree = "<group>"; };
+		44A2FF1F62ABB86A6F6D28EE69D81A87 /* TGBExceptionHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBExceptionHandler.m; sourceTree = "<group>"; };
+		4773EB725D8B453AFB447A2A1D70DA94 /* TGBRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBRequestOperation.h; sourceTree = "<group>"; };
+		487FF97CBC1739FA2846071449DE430E /* TGBStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBStatus.h; sourceTree = "<group>"; };
+		4A65412C33D8CE391E7C90E28D01A363 /* TGBSaveOption_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBSaveOption_internal.h; sourceTree = "<group>"; };
+		4BF1E9EDA5B1DBC4C2EA96CAEF75AB8F /* TGBFriendQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBFriendQuery.h; sourceTree = "<group>"; };
+		50F7E390047526532418303B2189F11C /* TGBSMS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBSMS.h; sourceTree = "<group>"; };
+		52DAD0FFE0CC29705968AB87FC87DD7F /* TGBGeoPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBGeoPoint.h; sourceTree = "<group>"; };
+		535A6FF4E892A8B0C19652159FA2C032 /* Pods-TGBAnyObject_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TGBAnyObject_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		53F897318ACA67B02BAB992D46D11750 /* TGBACL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBACL.m; sourceTree = "<group>"; };
+		5509714CBD2AA9BF489551F4EB7CDAF6 /* TGBReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBReachability.h; sourceTree = "<group>"; };
+		56611A59385D5BADFDE36498448707C7 /* TGBGlobal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBGlobal.h; sourceTree = "<group>"; };
+		567824046926D853FF5451765B6D1FED /* TGBURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBURLResponseSerialization.h; sourceTree = "<group>"; };
+		580B1E9D59166F151F77CC2B344E651C /* TGBAnyObject.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = TGBAnyObject.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5B2758B09E8BF30209EC14246133A24F /* TGBAnalyticsUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBAnalyticsUtils.h; sourceTree = "<group>"; };
+		5D2C8D0C6BD00CE265AFFF2FBEE168CC /* TGBRequestManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBRequestManager.m; sourceTree = "<group>"; };
+		5EFD77BD219B72B47942830DD415981C /* TGBRequestManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBRequestManager.h; sourceTree = "<group>"; };
+		5F01759392AB66A30FE99492D6D2B1B7 /* TGBAnalyticsSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBAnalyticsSession.h; sourceTree = "<group>"; };
+		5F0B0E3A8E6A273E56BAC87227E18BD4 /* TGBFriendQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBFriendQuery.m; sourceTree = "<group>"; };
+		6335F0D53B815B94986C0E8CEBE2CC3A /* TGBConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBConstants.h; sourceTree = "<group>"; };
+		635B01921923E030DB21FA11A762AEBE /* TGBAnonymousUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBAnonymousUtils.h; sourceTree = "<group>"; };
+		637CEB19BEC6AA280B0C6B710675772E /* TGBCacheManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBCacheManager.m; sourceTree = "<group>"; };
+		63EC2AD572D34511C3FE00DF53E3FBD2 /* TGBACL_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBACL_Internal.h; sourceTree = "<group>"; };
+		64E13E60DC984CC768E330FEE948F2B9 /* TGBDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBDatabasePool.h; sourceTree = "<group>"; };
+		65622F61002555FF63FD38C0B066DEEC /* Pods-TGBAnyObject_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TGBAnyObject_Tests.modulemap"; sourceTree = "<group>"; };
+		65739339883DCF9932C93F9B12CBA6B5 /* TGBNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		661D34C4209C8B68CFF45272D6E27818 /* TGBMessageKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBMessageKit.h; sourceTree = "<group>"; };
+		6639A7E810271533B564AADC22D8477D /* TGBErrorUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBErrorUtils.h; sourceTree = "<group>"; };
+		66BA65E6D347A4720985D214B0B72E4D /* TGBDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBDatabaseAdditions.m; sourceTree = "<group>"; };
+		67749812D2561FA57D510EE90624CCAC /* TGBAnalyticsSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBAnalyticsSession.m; sourceTree = "<group>"; };
+		677BA44F075700F3ABAC9C9E6D61536E /* TGBNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBNetworking.h; sourceTree = "<group>"; };
+		67BB26FAFDC2CE0F32F32E949A1D4145 /* TGBQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBQuery.m; sourceTree = "<group>"; };
+		680629380E6E1A9FF1405446CD28E23B /* TGBURLConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBURLConnection.h; sourceTree = "<group>"; };
+		68ED2386C563736D1B2E5B77AE7A86E6 /* TGBAnalyticsImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBAnalyticsImpl.m; sourceTree = "<group>"; };
+		6919D151C615D34E1F19BA3F5467B39E /* Pods-TGBAnyObject_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TGBAnyObject_Example-dummy.m"; sourceTree = "<group>"; };
+		6B740A9F399329ED9956DCEA3AD5B20E /* Pods-TGBAnyObject_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TGBAnyObject_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		6B7BFC6AFCE64424A2BE36ECBF8DC568 /* TGBFile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBFile.m; sourceTree = "<group>"; };
+		6C9222D302D11922140FC76D2F367A45 /* TGBFileQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBFileQuery.h; sourceTree = "<group>"; };
+		6D01B8CA18FDE8087330E48451BD7E55 /* TGBHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBHTTPSessionManager.m; sourceTree = "<group>"; };
+		6E6774088E544A7383251C8AF2BE3ACB /* TGBDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBDatabase.h; sourceTree = "<group>"; };
+		6F8F0C4648166B8EB0312BBDA835CC3B /* TGBPaasClient_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBPaasClient_internal.h; sourceTree = "<group>"; };
+		6F954E210DC1236DF8BD8BE83D70CA9A /* TGBRole.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBRole.h; sourceTree = "<group>"; };
+		7024661BAE36E603EA83515D5026B664 /* TGBNSDictionary+LCHash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TGBNSDictionary+LCHash.m"; sourceTree = "<group>"; };
+		72E3366CDF4660AFC04580579FA09741 /* TGBSaveOption.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBSaveOption.m; sourceTree = "<group>"; };
+		74E404AA6957590324067E330E0EC533 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		792DD28B0B83605242040831A3DB970E /* TGBFile_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBFile_Internal.h; sourceTree = "<group>"; };
+		793EA2268563298395236534BF2D9065 /* TGBPush_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBPush_Internal.h; sourceTree = "<group>"; };
+		799E57EB95C7DA41DF39FEA2DB3A71E5 /* TGBReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBReachability.m; sourceTree = "<group>"; };
+		79B3D92B2FE8408346901AACDDDC3341 /* Pods-TGBAnyObject_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TGBAnyObject_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		7AE6ABD843674A7A4E935E857881DE5D /* TGBRelation_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBRelation_Internal.h; sourceTree = "<group>"; };
+		7B6121B919F3870AE1C91B0321A9F5EB /* TGBPersistenceUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBPersistenceUtils.m; sourceTree = "<group>"; };
+		7BB8E752A7AB517B0A2694BD2E030D0E /* TGBDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBDatabase.m; sourceTree = "<group>"; };
+		7C52BF413371CA5D5D83756DC2626395 /* Pods-TGBAnyObject_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TGBAnyObject_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		7C696034A06CB27CDBD3EB8301178192 /* TGBErrorUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBErrorUtils.m; sourceTree = "<group>"; };
+		7F460B5FEECCAD86867DBD2832D911E7 /* TGBKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBKeychain.h; sourceTree = "<group>"; };
+		7FBB8EA4273827385FD9386614F6505A /* Pods_TGBAnyObject_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TGBAnyObject_Example.framework; path = "Pods-TGBAnyObject_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FD00818817B34A7656B188B0C7070DE /* TGBSearchSortBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBSearchSortBuilder.m; sourceTree = "<group>"; };
+		7FE7502383252033A0650E6D1F2F61EB /* TGBDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBDatabasePool.m; sourceTree = "<group>"; };
+		8038017FAE7326E35BD3765370DB784E /* TGBDynamicObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBDynamicObject.h; sourceTree = "<group>"; };
+		8049FF9DAB601954DED598EEA44CC152 /* TGBFileTaskManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBFileTaskManager.h; sourceTree = "<group>"; };
+		82DF97B3FE9BA1C5FB8DEAA5A5422FEB /* TGBDatabaseCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBDatabaseCoordinator.h; sourceTree = "<group>"; };
+		8303357B583F181BBAF44349542E97BE /* TGBDuration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBDuration.h; sourceTree = "<group>"; };
+		84A3708F6178979AD72EEDE4DDD32FFD /* TGBNetworkStatistics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBNetworkStatistics.m; sourceTree = "<group>"; };
+		852DD0C69FB8A9CF3E97A8B690F8F344 /* TGBDatabaseCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBDatabaseCommon.h; sourceTree = "<group>"; };
+		853C817F1DF637FF8B120B18795B131A /* TGBDynamicObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBDynamicObject.m; sourceTree = "<group>"; };
+		85F5D5D662FCA7BFF6640D8899E66F34 /* TGBRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBRouter.h; sourceTree = "<group>"; };
+		89F263D0DB738C21ACE578369889ED73 /* TGBSubclassing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBSubclassing.h; sourceTree = "<group>"; };
+		8A20B01B17DA8FDC0EA552174DF99980 /* TGBCloud_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBCloud_Internal.h; sourceTree = "<group>"; };
+		8DC84391BF5B9CAB737FAFA8E86872CD /* Pods-TGBAnyObject_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TGBAnyObject_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8E220E95424F7BD926825F83594B0DA7 /* TGBSystemInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBSystemInfo.m; sourceTree = "<group>"; };
+		925F0D05CAFCDE3C7A5AAE4A61D49B3D /* TGBNSDictionary+LCHash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TGBNSDictionary+LCHash.h"; sourceTree = "<group>"; };
+		93116284E5E605799728904628F3E220 /* TGBAnalyticsActivity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBAnalyticsActivity.m; sourceTree = "<group>"; };
+		937D3E33BEFD918B811CB6EAD179303A /* TGBURLConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBURLConnection.m; sourceTree = "<group>"; };
+		938CE6F6AFCCB82E117799F91FCA3C55 /* TGBAnyObject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TGBAnyObject-umbrella.h"; sourceTree = "<group>"; };
+		93A11D8C3F049C22EFE8C28140A47230 /* TGBRouter_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBRouter_Internal.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96361FA8567B1A35223670DA3A5389E9 /* TGBLocationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBLocationManager.m; sourceTree = "<group>"; };
+		96ECA9F104BB9960D114237AFFDF941E /* TGBAnalyticsImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBAnalyticsImpl.h; sourceTree = "<group>"; };
+		975ED708135A648DE4CDDCEC9A6720A1 /* TGBScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBScheduler.h; sourceTree = "<group>"; };
+		985109E0D790D93665C84F2A97B36F85 /* TGBResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBResultSet.h; sourceTree = "<group>"; };
+		991FA69ED8EC385C5F94BB97745F6F50 /* TGBSearchQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBSearchQuery.m; sourceTree = "<group>"; };
+		9953AC4F8EFECE74423C8135ABC08B34 /* TGBmetamacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBmetamacros.h; sourceTree = "<group>"; };
+		9B60965C35EF626B4AAAA3B35011687D /* TGBKeyValueStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBKeyValueStore.m; sourceTree = "<group>"; };
+		9D047B7CC8FC1122B8580C6CC4044A1F /* TGBRole_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBRole_Internal.h; sourceTree = "<group>"; };
+		9D42AFCDA90F891DE7C8208049B01F12 /* Pods-TGBAnyObject_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TGBAnyObject_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9FD64519EE836AF415F7B65865304EB1 /* TGBQuery_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBQuery_Internal.h; sourceTree = "<group>"; };
+		A0507F21F886A1A4AF39342E51B506BC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		A1311F745D3F518975442E09CF13A474 /* TGBSwizzle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBSwizzle.m; sourceTree = "<group>"; };
+		A1491775739D4AE1D738F17355E389DA /* TGBKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBKeychain.m; sourceTree = "<group>"; };
+		A1A5557883637FA16B248D5B8FD13847 /* TGBSSLChallenger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBSSLChallenger.h; sourceTree = "<group>"; };
+		A1C1D6DA33BD006E03115843D41FC55D /* TGBCloud_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBCloud_Internal.h; sourceTree = "<group>"; };
+		A1FCC48B3F477C93E99D463B4771B993 /* TGBCloudQueryResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBCloudQueryResult.h; sourceTree = "<group>"; };
+		A257B5F0CF5539E6CF91C9D8ED66ABA9 /* TGBObjectUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBObjectUtils.h; sourceTree = "<group>"; };
+		A35BD999F0CE4566DD70ACD5AFADBCC4 /* TGBDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBDatabaseQueue.h; sourceTree = "<group>"; };
+		A38210D8429A572390A8521C04C0D9D9 /* TGBACL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBACL.h; sourceTree = "<group>"; };
+		A408C651AFD1B49504AEE2F188248938 /* TGBObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBObject.h; sourceTree = "<group>"; };
+		A539B18786499881A584B88037E4FD7F /* TGBInstallation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBInstallation.m; sourceTree = "<group>"; };
+		A5AB2F30051964C51FDBE208A8345850 /* TGBNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		A80A5239595E84AB9C2D7871FBD4D4E8 /* Pods-TGBAnyObject_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TGBAnyObject_Example.modulemap"; sourceTree = "<group>"; };
+		ACB40A1E9777C043A79EA15853DF7D41 /* TGBPaasClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBPaasClient.m; sourceTree = "<group>"; };
+		B0A3D747913C242534B2431CCA751376 /* TGBDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBDatabaseAdditions.h; sourceTree = "<group>"; };
+		B4C1181F11091F6C5F0241054504ED59 /* TGBSaveOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBSaveOption.h; sourceTree = "<group>"; };
+		B4D3701DEE72BD30FCCAE389408FCD32 /* TGBCloudQueryResult_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBCloudQueryResult_Internal.h; sourceTree = "<group>"; };
+		B5A3D843748B3D45CB315A43B30CED56 /* Pods-TGBAnyObject_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TGBAnyObject_Example-umbrella.h"; sourceTree = "<group>"; };
+		B5CF2A637EC7E96B94F09D5CF2CD2B5A /* TGBRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBRequestOperation.m; sourceTree = "<group>"; };
+		B5EBE468ABA3AC8CD0864E7256E0DD57 /* TGBAnalyticsActivity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBAnalyticsActivity.h; sourceTree = "<group>"; };
+		B6C2D6CA1F79AAB48A2D1942EC79D2E5 /* TGBSwizzle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBSwizzle.m; sourceTree = "<group>"; };
+		B7FA4887FD2F523F1B8645E2632BFCEF /* TGBAnalytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBAnalytics.h; sourceTree = "<group>"; };
+		B98490C11F9AC66A8FC3C86648999204 /* TGBFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBFile.h; sourceTree = "<group>"; };
+		BAA700557F2D718C0609BDC7AC824390 /* TGBObjectUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBObjectUtils.m; sourceTree = "<group>"; };
+		BB9DFE9959DEAED9E26ABE6849F0D2A4 /* TGBAnonymousUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBAnonymousUtils.m; sourceTree = "<group>"; };
+		BBCD042EBE371C292911859468EC4C00 /* TGBExceptionHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBExceptionHandler.h; sourceTree = "<group>"; };
+		BDB47AB8CCF72B82928B36923676D7D5 /* TGBDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBDatabaseQueue.m; sourceTree = "<group>"; };
+		BE426F39B890AABC2272F61B71333630 /* TGBEXTScope.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBEXTScope.m; sourceTree = "<group>"; };
+		C21711D1FF57931973133374FF1451B0 /* TGBDatabaseMigrator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBDatabaseMigrator.h; sourceTree = "<group>"; };
+		C23D88CBA256AE4220CF7A0BF199AC5F /* TGBNSDictionary+LeanCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TGBNSDictionary+LeanCloud.h"; sourceTree = "<group>"; };
+		C4755032C6525307FBACFD5059CE1F73 /* TGBKKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBKKit.m; sourceTree = "<group>"; };
+		C4B9E37333229C39D85BA7D71260B3A5 /* TGBObject_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBObject_Internal.h; sourceTree = "<group>"; };
+		C4D461F8E9DB926B0F4B7C5C43D96527 /* TGBSwizzle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBSwizzle.h; sourceTree = "<group>"; };
+		C4D4BBD50967BB53FF950199465B8C63 /* TGBQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBQuery.h; sourceTree = "<group>"; };
+		C642338A5260A0CA50221D0143E2DD3E /* TGBEXTScope.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBEXTScope.h; sourceTree = "<group>"; };
+		C88136202D91814A84494F6E6FB9EA8E /* Pods-TGBAnyObject_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TGBAnyObject_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C898A144D6A141B414AE87CE6274C145 /* TGBURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBURLRequestSerialization.h; sourceTree = "<group>"; };
+		CF7CA46B4149F63A2DCB9CBA20E8F034 /* TGBFileTaskManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBFileTaskManager.m; sourceTree = "<group>"; };
+		D0130FD99AD84DAB423680FA7B96A19A /* TGBPush.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBPush.m; sourceTree = "<group>"; };
+		D1A77367AB24254F8FECB611AF64FA3A /* TGBLocationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBLocationManager.h; sourceTree = "<group>"; };
+		D3AEBE50F7182E552BB9A72B6039CF87 /* TGBCacheManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBCacheManager.h; sourceTree = "<group>"; };
+		D4AC253E0387188F6A2F0C9BE834CC15 /* TGBURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBURLRequestSerialization.m; sourceTree = "<group>"; };
+		D58E5375BA356BD64AD49775D8C080B3 /* TGBCloudQueryResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBCloudQueryResult.m; sourceTree = "<group>"; };
+		D62E6AB1E58C49F399EABE0DED02B3A3 /* TGBRole.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBRole.m; sourceTree = "<group>"; };
+		D7B48479AA47387A802719EE2CD50200 /* TGBMessageKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBMessageKit.m; sourceTree = "<group>"; };
+		D8A4B68DC308A2BA4709B15601577931 /* TGBUsered.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBUsered.m; sourceTree = "<group>"; };
+		DA79601AC0AC4F30047C20B68C4AFB14 /* TGBPersistenceUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBPersistenceUtils.h; sourceTree = "<group>"; };
+		DB992834EF976782BBC7A67C59A28520 /* TGBNetworkStatistics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBNetworkStatistics.h; sourceTree = "<group>"; };
+		DD49EDA6B521D4A8E5A57DB27F0FAC13 /* TGBRelation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBRelation.m; sourceTree = "<group>"; };
+		DE56C79B99000DAAB3D6300445B48F17 /* TGBSSLChallenger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBSSLChallenger.m; sourceTree = "<group>"; };
+		E01615D1E8226DC9B47A7E5AA4A9B097 /* TGBSMS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBSMS.m; sourceTree = "<group>"; };
+		E158D2B14A56BD5214597713ED79E649 /* TGBRelation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBRelation.h; sourceTree = "<group>"; };
+		E1D0DA0BBA0A949A5CEB5724D495DF08 /* TGBURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBURLSessionManager.m; sourceTree = "<group>"; };
+		E1F92DD3CB6EC0537D092BDBD771722F /* TGBURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBURLResponseSerialization.m; sourceTree = "<group>"; };
+		E2253BBFAE5338FF095E1DA81F07F80B /* TGBSystemInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBSystemInfo.h; sourceTree = "<group>"; };
+		E2F8F80CAA470DDD98F5B88A00A9296C /* TGBDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBDB.h; sourceTree = "<group>"; };
+		E62327582026A63E2B0AFB7C439B6A24 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E91D5B324BA1CF94E35674A93C661D54 /* TGBAnalytics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBAnalytics.m; sourceTree = "<group>"; };
+		EB3EC5F8081BDED6C6720F06554DB99A /* TGBKeyValueSQL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBKeyValueSQL.h; sourceTree = "<group>"; };
+		EE64AF8EE990FE2ADE1A2A50464ACD9C /* TGBDatabaseCoordinator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBDatabaseCoordinator.m; sourceTree = "<group>"; };
+		EEDCD578A675A7B46BEB63167A7619FF /* TGBHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBHTTPSessionManager.h; sourceTree = "<group>"; };
+		EFB544ED589511391CD602AE42CC8101 /* TGBObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBObject.m; sourceTree = "<group>"; };
+		F0B0BA16308FF7C90C75B6741D29A1C8 /* Pods-TGBAnyObject_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TGBAnyObject_Tests-dummy.m"; sourceTree = "<group>"; };
+		F0C828AEB917CB77C5B84AC38028F9C9 /* TGBNSDictionary+LeanCloud.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TGBNSDictionary+LeanCloud.m"; sourceTree = "<group>"; };
+		F0E9710926EE52209F704E0A7C570EF7 /* Pods-TGBAnyObject_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TGBAnyObject_Example-resources.sh"; sourceTree = "<group>"; };
+		F4214D1BF0E6532418A74CF4D32C1C5D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F52AD17002F70F05769380BF2A586D67 /* TGBURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBURLSessionManager.h; sourceTree = "<group>"; };
+		F631571CD06D8A708ED586F21B77C3B7 /* TGBObject+Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TGBObject+Subclass.h"; sourceTree = "<group>"; };
+		F8C6FD4AA74EF3D1B361712E505A6E60 /* TGBDatabaseMigrator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBDatabaseMigrator.m; sourceTree = "<group>"; };
+		F91BD346679230A948DE52C1701CAB36 /* TGBAnyObject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TGBAnyObject.framework; path = TGBAnyObject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA4E696EF6E62A102671014761268BB1 /* TGBAnalyticsUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBAnalyticsUtils.m; sourceTree = "<group>"; };
+		FA7AFB351B1F48BCCB833410731D0025 /* TGBUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TGBUtils.m; sourceTree = "<group>"; };
+		FB1FACFD05040502C4BF2FCC89738E35 /* TGBUsered_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBUsered_Internal.h; sourceTree = "<group>"; };
+		FB3E4FE928929D4C5F90552D3F4DD03E /* TGBPaasClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TGBPaasClient.h; sourceTree = "<group>"; };
+		FF145A20B9738CD68CBF3EAF602B1F73 /* TGBAnyObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TGBAnyObject.h; path = Sources/TGBAnyObject.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EF0DB0474571143DD714EF26430B434 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F802D1464EDE3A66A6E85435CE8A163 /* Foundation.framework in Frameworks */,
+				9B35FC79F04FABF5BFEBE6B378E471C0 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1210477BC94F381F188ADDEE6209C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1128244A736AAB31C4389CF22F27C606 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5840E2C8F0C9524F9C0CE8FAA698C514 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D937830E7BD60E9DCDD2BCC7A2F87C1B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05841024D4F01750C83D6CEEDF119891 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FBB8EA4273827385FD9386614F6505A /* Pods_TGBAnyObject_Example.framework */,
+				18AE13E54D41DFDE4924E729B173D9D1 /* Pods_TGBAnyObject_Tests.framework */,
+				F91BD346679230A948DE52C1701CAB36 /* TGBAnyObject.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06CDD10DE71306278CF89108B3036DFD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */,
+				74E404AA6957590324067E330E0EC533 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		0A3D05EE0F8EB8AEC3D7EAFE2A772B87 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E8685863B6BC94D5FCF0FD490EC2727 /* Pods-TGBAnyObject_Example */,
+				4A2F900CFCCBFC9CB9E5ABC5169A8441 /* Pods-TGBAnyObject_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0F70ACC78860C5B8A03E6B9347FD7BE1 /* AnyObject */ = {
+			isa = PBXGroup;
+			children = (
+				A38210D8429A572390A8521C04C0D9D9 /* TGBACL.h */,
+				53F897318ACA67B02BAB992D46D11750 /* TGBACL.m */,
+				63EC2AD572D34511C3FE00DF53E3FBD2 /* TGBACL_Internal.h */,
+				6F954E210DC1236DF8BD8BE83D70CA9A /* TGBRole.h */,
+				D62E6AB1E58C49F399EABE0DED02B3A3 /* TGBRole.m */,
+				9D047B7CC8FC1122B8580C6CC4044A1F /* TGBRole_Internal.h */,
+			);
+			name = AnyObject;
+			path = AnyObject;
+			sourceTree = "<group>";
+		};
+		0FD105A3D873B30B1688B1EC072818BE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				852DD0C69FB8A9CF3E97A8B690F8F344 /* TGBDatabaseCommon.h */,
+				82DF97B3FE9BA1C5FB8DEAA5A5422FEB /* TGBDatabaseCoordinator.h */,
+				EE64AF8EE990FE2ADE1A2A50464ACD9C /* TGBDatabaseCoordinator.m */,
+				C21711D1FF57931973133374FF1451B0 /* TGBDatabaseMigrator.h */,
+				F8C6FD4AA74EF3D1B361712E505A6E60 /* TGBDatabaseMigrator.m */,
+				8038017FAE7326E35BD3765370DB784E /* TGBDynamicObject.h */,
+				853C817F1DF637FF8B120B18795B131A /* TGBDynamicObject.m */,
+				0B6E9EE24CB03990941581F615A5110C /* TGBDynamicObject_Internal.h */,
+				6639A7E810271533B564AADC22D8477D /* TGBErrorUtils.h */,
+				7C696034A06CB27CDBD3EB8301178192 /* TGBErrorUtils.m */,
+				3A67CCDF1816865BE93B457270579BFB /* TGBHelpers.h */,
+				EB3EC5F8081BDED6C6720F06554DB99A /* TGBKeyValueSQL.h */,
+				024038A4127EA2CEF584A05B4091772E /* TGBKeyValueStore.h */,
+				9B60965C35EF626B4AAAA3B35011687D /* TGBKeyValueStore.m */,
+				925F0D05CAFCDE3C7A5AAE4A61D49B3D /* TGBNSDictionary+LCHash.h */,
+				7024661BAE36E603EA83515D5026B664 /* TGBNSDictionary+LCHash.m */,
+				C23D88CBA256AE4220CF7A0BF199AC5F /* TGBNSDictionary+LeanCloud.h */,
+				F0C828AEB917CB77C5B84AC38028F9C9 /* TGBNSDictionary+LeanCloud.m */,
+				5509714CBD2AA9BF489551F4EB7CDAF6 /* TGBReachability.h */,
+				799E57EB95C7DA41DF39FEA2DB3A71E5 /* TGBReachability.m */,
+				A1A5557883637FA16B248D5B8FD13847 /* TGBSSLChallenger.h */,
+				DE56C79B99000DAAB3D6300445B48F17 /* TGBSSLChallenger.m */,
+				3B14A62407FA6672ABF3AE0CAFDE4211 /* TGBSwizzle.h */,
+				B6C2D6CA1F79AAB48A2D1942EC79D2E5 /* TGBSwizzle.m */,
+				680629380E6E1A9FF1405446CD28E23B /* TGBURLConnection.h */,
+				937D3E33BEFD918B811CB6EAD179303A /* TGBURLConnection.m */,
+				3FC3F9605C0396EB41D44BEED29B7F2E /* TGBUtils.h */,
+				FA7AFB351B1F48BCCB833410731D0025 /* TGBUtils.m */,
+			);
+			name = Utils;
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1434F809E1BFBA8C0FAE39D5FB3D657F /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				85F5D5D662FCA7BFF6640D8899E66F34 /* TGBRouter.h */,
+				04C0AAB613B781175FB9DC07789CF54F /* TGBRouter.m */,
+				93A11D8C3F049C22EFE8C28140A47230 /* TGBRouter_Internal.h */,
+			);
+			name = Security;
+			path = Security;
+			sourceTree = "<group>";
+		};
+		1F6946642375AADBC744A8A0B6038220 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				A408C651AFD1B49504AEE2F188248938 /* TGBObject.h */,
+				EFB544ED589511391CD602AE42CC8101 /* TGBObject.m */,
+				F631571CD06D8A708ED586F21B77C3B7 /* TGBObject+Subclass.h */,
+				C4B9E37333229C39D85BA7D71260B3A5 /* TGBObject_Internal.h */,
+				A257B5F0CF5539E6CF91C9D8ED66ABA9 /* TGBObjectUtils.h */,
+				BAA700557F2D718C0609BDC7AC824390 /* TGBObjectUtils.m */,
+				E158D2B14A56BD5214597713ED79E649 /* TGBRelation.h */,
+				DD49EDA6B521D4A8E5A57DB27F0FAC13 /* TGBRelation.m */,
+				7AE6ABD843674A7A4E935E857881DE5D /* TGBRelation_Internal.h */,
+				5EFD77BD219B72B47942830DD415981C /* TGBRequestManager.h */,
+				5D2C8D0C6BD00CE265AFFF2FBEE168CC /* TGBRequestManager.m */,
+				B4C1181F11091F6C5F0241054504ED59 /* TGBSaveOption.h */,
+				72E3366CDF4660AFC04580579FA09741 /* TGBSaveOption.m */,
+				4A65412C33D8CE391E7C90E28D01A363 /* TGBSaveOption_internal.h */,
+				89F263D0DB738C21ACE578369889ED73 /* TGBSubclassing.h */,
+			);
+			name = Object;
+			path = Object;
+			sourceTree = "<group>";
+		};
+		20F53D4E5F8246D69E5941F07A747C13 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				FB3E4FE928929D4C5F90552D3F4DD03E /* TGBPaasClient.h */,
+				ACB40A1E9777C043A79EA15853DF7D41 /* TGBPaasClient.m */,
+				6F8F0C4648166B8EB0312BBDA835CC3B /* TGBPaasClient_internal.h */,
+				4773EB725D8B453AFB447A2A1D70DA94 /* TGBRequestOperation.h */,
+				B5CF2A637EC7E96B94F09D5CF2CD2B5A /* TGBRequestOperation.m */,
+			);
+			name = Request;
+			path = Request;
+			sourceTree = "<group>";
+		};
+		23476D3E7EEA645A0ABEFB225439FBD2 /* Beaver */ = {
+			isa = PBXGroup;
+			children = (
+				52DAD0FFE0CC29705968AB87FC87DD7F /* TGBGeoPoint.h */,
+				276929DA80ADCCC85710C255DB74E445 /* TGBGeoPoint.m */,
+				05F4D12A450A4522DB295D4B3A0AB4B1 /* TGBGeoPoint_Internal.h */,
+				D1A77367AB24254F8FECB611AF64FA3A /* TGBLocationManager.h */,
+				96361FA8567B1A35223670DA3A5389E9 /* TGBLocationManager.m */,
+			);
+			name = Beaver;
+			path = Beaver;
+			sourceTree = "<group>";
+		};
+		25EDFE3BEB9BC8F76A5C0AB4427824FF /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				22BF89E7CB413CDE107997CB40FB1955 /* TGBCloud.h */,
+				1D9B30E0534FF8B67088D278D4C31D85 /* TGBCloud.m */,
+				A1C1D6DA33BD006E03115843D41FC55D /* TGBCloud_Internal.h */,
+			);
+			name = Support;
+			path = Support;
+			sourceTree = "<group>";
+		};
+		2CB88DA53500C8460A2C2D4C880359E1 /* NSCaches */ = {
+			isa = PBXGroup;
+			children = (
+				D3AEBE50F7182E552BB9A72B6039CF87 /* TGBCacheManager.h */,
+				637CEB19BEC6AA280B0C6B710675772E /* TGBCacheManager.m */,
+				DA79601AC0AC4F30047C20B68C4AFB14 /* TGBPersistenceUtils.h */,
+				7B6121B919F3870AE1C91B0321A9F5EB /* TGBPersistenceUtils.m */,
+				975ED708135A648DE4CDDCEC9A6720A1 /* TGBScheduler.h */,
+				1B24EE2D5DFB4F79A7B92B3199F0FF82 /* TGBScheduler.m */,
+			);
+			name = NSCaches;
+			path = NSCaches;
+			sourceTree = "<group>";
+		};
+		32AF0AFAF2B2416CFA071CADF4D556EB /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				DB992834EF976782BBC7A67C59A28520 /* TGBNetworkStatistics.h */,
+				84A3708F6178979AD72EEDE4DDD32FFD /* TGBNetworkStatistics.m */,
+			);
+			name = Toast;
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		3830CB2A1828A11606A35B8BE8DDCCB4 /* LCNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				EEDCD578A675A7B46BEB63167A7619FF /* TGBHTTPSessionManager.h */,
+				6D01B8CA18FDE8087330E48451BD7E55 /* TGBHTTPSessionManager.m */,
+				677BA44F075700F3ABAC9C9E6D61536E /* TGBNetworking.h */,
+				A5AB2F30051964C51FDBE208A8345850 /* TGBNetworkReachabilityManager.h */,
+				65739339883DCF9932C93F9B12CBA6B5 /* TGBNetworkReachabilityManager.m */,
+				00782FE702AFE2AE77E439EDA59D27B8 /* TGBSecurityPolicy.h */,
+				3AC3664EC82F5E7133298D7D1DABA271 /* TGBSecurityPolicy.m */,
+				C898A144D6A141B414AE87CE6274C145 /* TGBURLRequestSerialization.h */,
+				D4AC253E0387188F6A2F0C9BE834CC15 /* TGBURLRequestSerialization.m */,
+				567824046926D853FF5451765B6D1FED /* TGBURLResponseSerialization.h */,
+				E1F92DD3CB6EC0537D092BDBD771722F /* TGBURLResponseSerialization.m */,
+				F52AD17002F70F05769380BF2A586D67 /* TGBURLSessionManager.h */,
+				E1D0DA0BBA0A949A5CEB5724D495DF08 /* TGBURLSessionManager.m */,
+			);
+			name = LCNetworking;
+			path = LCNetworking;
+			sourceTree = "<group>";
+		};
+		3D89DF566A990A29E9707A2E8DC12F15 /* JNKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				7F460B5FEECCAD86867DBD2832D911E7 /* TGBKeychain.h */,
+				A1491775739D4AE1D738F17355E389DA /* TGBKeychain.m */,
+			);
+			name = JNKeychain;
+			path = JNKeychain;
+			sourceTree = "<group>";
+		};
+		3D91B659B57088FD69DEEB839AD75558 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				B98490C11F9AC66A8FC3C86648999204 /* TGBFile.h */,
+				6B7BFC6AFCE64424A2BE36ECBF8DC568 /* TGBFile.m */,
+				792DD28B0B83605242040831A3DB970E /* TGBFile_Internal.h */,
+				6C9222D302D11922140FC76D2F367A45 /* TGBFileQuery.h */,
+				2AD299D6B2FE4DC463F0D18A6DC384FD /* TGBFileQuery.m */,
+				8049FF9DAB601954DED598EEA44CC152 /* TGBFileTaskManager.h */,
+				CF7CA46B4149F63A2DCB9CBA20E8F034 /* TGBFileTaskManager.m */,
+			);
+			name = File;
+			path = File;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06CDD10DE71306278CF89108B3036DFD /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A2F900CFCCBFC9CB9E5ABC5169A8441 /* Pods-TGBAnyObject_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				17CC801B89C7AE53630E0C70C6788914 /* Info.plist */,
+				65622F61002555FF63FD38C0B066DEEC /* Pods-TGBAnyObject_Tests.modulemap */,
+				0977C9A2BF1A41FAC94DCFB54A0F7339 /* Pods-TGBAnyObject_Tests-acknowledgements.markdown */,
+				3A939364D4FCCAF140F606295B113249 /* Pods-TGBAnyObject_Tests-acknowledgements.plist */,
+				F0B0BA16308FF7C90C75B6741D29A1C8 /* Pods-TGBAnyObject_Tests-dummy.m */,
+				6B740A9F399329ED9956DCEA3AD5B20E /* Pods-TGBAnyObject_Tests-frameworks.sh */,
+				17CBF6C4909810ED3BA7D50B0CD8F583 /* Pods-TGBAnyObject_Tests-resources.sh */,
+				30BFD79CD2D2B2831F0901039A912E5B /* Pods-TGBAnyObject_Tests-umbrella.h */,
+				9D42AFCDA90F891DE7C8208049B01F12 /* Pods-TGBAnyObject_Tests.debug.xcconfig */,
+				7C52BF413371CA5D5D83756DC2626395 /* Pods-TGBAnyObject_Tests.release.xcconfig */,
+			);
+			name = "Pods-TGBAnyObject_Tests";
+			path = "Target Support Files/Pods-TGBAnyObject_Tests";
+			sourceTree = "<group>";
+		};
+		519E3B1B638136AAA1C7F382922E0307 /* TGBAnyObject */ = {
+			isa = PBXGroup;
+			children = (
+				8A20B01B17DA8FDC0EA552174DF99980 /* TGBCloud_Internal.h */,
+				6335F0D53B815B94986C0E8CEBE2CC3A /* TGBConstants.h */,
+				56611A59385D5BADFDE36498448707C7 /* TGBGlobal.h */,
+				3A73CE4727F55CCA77CE044E489D793E /* TGBKKit.h */,
+				C4755032C6525307FBACFD5059CE1F73 /* TGBKKit.m */,
+				21492DE2A5BB7B90C72F73B538A8D34A /* TGBOSCloud_Art.inc */,
+				29CEE76A2793ADBCB72F08E1C3F1A149 /* TGBUserAgent.h */,
+				2CDA2580077A09A291BB7918B7E5D1F7 /* TGBvailability.h */,
+				F88DD0A1BD7A6B6E6F4B0A99FC31A844 /* Access */,
+				0F70ACC78860C5B8A03E6B9347FD7BE1 /* AnyObject */,
+				23476D3E7EEA645A0ABEFB225439FBD2 /* Beaver */,
+				F6809175845293CEB6EB733F52E051ED /* Cocoa */,
+				D2E2A189745C051DC9E627590175AA9D /* CocoaSecuritys */,
+				3D91B659B57088FD69DEEB839AD75558 /* File */,
+				2CB88DA53500C8460A2C2D4C880359E1 /* NSCaches */,
+				1F6946642375AADBC744A8A0B6038220 /* Object */,
+				DA0FF55A6B8E82A3A47B59F21B805E89 /* Private */,
+				DCDBD5C02058D6F25ACA2C751A3D7827 /* Public */,
+				A4CDA3254B7996E98AAB887EDB364A9C /* Query */,
+				20F53D4E5F8246D69E5941F07A747C13 /* Request */,
+				A9F2177BECE5C38BBABC8CEA36F9019A /* Result */,
+				1434F809E1BFBA8C0FAE39D5FB3D657F /* Security */,
+				FB97EF0076D9637BAE9BD27E16BB53BA /* submodules */,
+				25EDFE3BEB9BC8F76A5C0AB4427824FF /* Support */,
+				858E7D5923E94279AB9D793D3CABCA19 /* ThirdParty */,
+				32AF0AFAF2B2416CFA071CADF4D556EB /* Toast */,
+				AA6D03151B7CBE1F9C4D63943CC4F87A /* User */,
+				0FD105A3D873B30B1688B1EC072818BE /* Utils */,
+			);
+			name = TGBAnyObject;
+			path = Sources/TGBAnyObject;
+			sourceTree = "<group>";
+		};
+		5682FBB450EF86839C193D7F84E3CE19 /* JRSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				C4D461F8E9DB926B0F4B7C5C43D96527 /* TGBSwizzle.h */,
+				A1311F745D3F518975442E09CF13A474 /* TGBSwizzle.m */,
+			);
+			name = JRSwizzle;
+			path = JRSwizzle;
+			sourceTree = "<group>";
+		};
+		5E8685863B6BC94D5FCF0FD490EC2727 /* Pods-TGBAnyObject_Example */ = {
+			isa = PBXGroup;
+			children = (
+				20D14330B378F21DA13D074875C836C0 /* Info.plist */,
+				A80A5239595E84AB9C2D7871FBD4D4E8 /* Pods-TGBAnyObject_Example.modulemap */,
+				1A1721B91BB97D4287F6A70E2512AE2A /* Pods-TGBAnyObject_Example-acknowledgements.markdown */,
+				535A6FF4E892A8B0C19652159FA2C032 /* Pods-TGBAnyObject_Example-acknowledgements.plist */,
+				6919D151C615D34E1F19BA3F5467B39E /* Pods-TGBAnyObject_Example-dummy.m */,
+				C88136202D91814A84494F6E6FB9EA8E /* Pods-TGBAnyObject_Example-frameworks.sh */,
+				F0E9710926EE52209F704E0A7C570EF7 /* Pods-TGBAnyObject_Example-resources.sh */,
+				B5A3D843748B3D45CB315A43B30CED56 /* Pods-TGBAnyObject_Example-umbrella.h */,
+				79B3D92B2FE8408346901AACDDDC3341 /* Pods-TGBAnyObject_Example.debug.xcconfig */,
+				8DC84391BF5B9CAB737FAFA8E86872CD /* Pods-TGBAnyObject_Example.release.xcconfig */,
+			);
+			name = "Pods-TGBAnyObject_Example";
+			path = "Target Support Files/Pods-TGBAnyObject_Example";
+			sourceTree = "<group>";
+		};
+		7291C712CCFBC8756EE85C587289A92B /* TGBAnyObject */ = {
+			isa = PBXGroup;
+			children = (
+				FF145A20B9738CD68CBF3EAF602B1F73 /* TGBAnyObject.h */,
+				D5038B383BD3CD5D8FE4F6D935FEA764 /* Pod */,
+				F48A79DBB28E442C50358F6622852906 /* Support Files */,
+				519E3B1B638136AAA1C7F382922E0307 /* TGBAnyObject */,
+			);
+			name = TGBAnyObject;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				B6998BC23EE15411A772D50231E84D33 /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				05841024D4F01750C83D6CEEDF119891 /* Products */,
+				0A3D05EE0F8EB8AEC3D7EAFE2A772B87 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		84C54BE7CB619480542649544DE78988 /* SDMacros */ = {
+			isa = PBXGroup;
+			children = (
+				32F6C645D7C1C32CF5C1D8D54FF22D3D /* TGBMacros.h */,
+			);
+			name = SDMacros;
+			path = SDMacros;
+			sourceTree = "<group>";
+		};
+		858E7D5923E94279AB9D793D3CABCA19 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				3D89DF566A990A29E9707A2E8DC12F15 /* JNKeychain */,
+				5682FBB450EF86839C193D7F84E3CE19 /* JRSwizzle */,
+				8F4CBECAFAC0FF7096255FE67901F582 /* LCDB */,
+				3830CB2A1828A11606A35B8BE8DDCCB4 /* LCNetworking */,
+				AD8F688F890DD36D3B17E17A8ADC7A02 /* libextobjc */,
+				84C54BE7CB619480542649544DE78988 /* SDMacros */,
+			);
+			name = ThirdParty;
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		8F4CBECAFAC0FF7096255FE67901F582 /* LCDB */ = {
+			isa = PBXGroup;
+			children = (
+				6E6774088E544A7383251C8AF2BE3ACB /* TGBDatabase.h */,
+				7BB8E752A7AB517B0A2694BD2E030D0E /* TGBDatabase.m */,
+				B0A3D747913C242534B2431CCA751376 /* TGBDatabaseAdditions.h */,
+				66BA65E6D347A4720985D214B0B72E4D /* TGBDatabaseAdditions.m */,
+				64E13E60DC984CC768E330FEE948F2B9 /* TGBDatabasePool.h */,
+				7FE7502383252033A0650E6D1F2F61EB /* TGBDatabasePool.m */,
+				A35BD999F0CE4566DD70ACD5AFADBCC4 /* TGBDatabaseQueue.h */,
+				BDB47AB8CCF72B82928B36923676D7D5 /* TGBDatabaseQueue.m */,
+				E2F8F80CAA470DDD98F5B88A00A9296C /* TGBDB.h */,
+				985109E0D790D93665C84F2A97B36F85 /* TGBResultSet.h */,
+				270C10B0771426E267A07B12A86C75CC /* TGBResultSet.m */,
+			);
+			name = LCDB;
+			path = LCDB;
+			sourceTree = "<group>";
+		};
+		A4CDA3254B7996E98AAB887EDB364A9C /* Query */ = {
+			isa = PBXGroup;
+			children = (
+				A1FCC48B3F477C93E99D463B4771B993 /* TGBCloudQueryResult.h */,
+				D58E5375BA356BD64AD49775D8C080B3 /* TGBCloudQueryResult.m */,
+				B4D3701DEE72BD30FCCAE389408FCD32 /* TGBCloudQueryResult_Internal.h */,
+				4BF1E9EDA5B1DBC4C2EA96CAEF75AB8F /* TGBFriendQuery.h */,
+				5F0B0E3A8E6A273E56BAC87227E18BD4 /* TGBFriendQuery.m */,
+				C4D4BBD50967BB53FF950199465B8C63 /* TGBQuery.h */,
+				67BB26FAFDC2CE0F32F32E949A1D4145 /* TGBQuery.m */,
+				9FD64519EE836AF415F7B65865304EB1 /* TGBQuery_Internal.h */,
+			);
+			name = Query;
+			path = Query;
+			sourceTree = "<group>";
+		};
+		A9F2177BECE5C38BBABC8CEA36F9019A /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				B7FA4887FD2F523F1B8645E2632BFCEF /* TGBAnalytics.h */,
+				E91D5B324BA1CF94E35674A93C661D54 /* TGBAnalytics.m */,
+				31889843AE204C4489C8CEA27353A370 /* TGBAnalytics_Internal.h */,
+				B5EBE468ABA3AC8CD0864E7256E0DD57 /* TGBAnalyticsActivity.h */,
+				93116284E5E605799728904628F3E220 /* TGBAnalyticsActivity.m */,
+				96ECA9F104BB9960D114237AFFDF941E /* TGBAnalyticsImpl.h */,
+				68ED2386C563736D1B2E5B77AE7A86E6 /* TGBAnalyticsImpl.m */,
+				5F01759392AB66A30FE99492D6D2B1B7 /* TGBAnalyticsSession.h */,
+				67749812D2561FA57D510EE90624CCAC /* TGBAnalyticsSession.m */,
+				5B2758B09E8BF30209EC14246133A24F /* TGBAnalyticsUtils.h */,
+				FA4E696EF6E62A102671014761268BB1 /* TGBAnalyticsUtils.m */,
+				8303357B583F181BBAF44349542E97BE /* TGBDuration.h */,
+				2CA1BD58D5F111922F9C5E8D35F4D846 /* TGBDuration.m */,
+				BBCD042EBE371C292911859468EC4C00 /* TGBExceptionHandler.h */,
+				44A2FF1F62ABB86A6F6D28EE69D81A87 /* TGBExceptionHandler.m */,
+			);
+			name = Result;
+			path = Result;
+			sourceTree = "<group>";
+		};
+		AA6D03151B7CBE1F9C4D63943CC4F87A /* User */ = {
+			isa = PBXGroup;
+			children = (
+				635B01921923E030DB21FA11A762AEBE /* TGBAnonymousUtils.h */,
+				BB9DFE9959DEAED9E26ABE6849F0D2A4 /* TGBAnonymousUtils.m */,
+				22552514C5E46A61B9630A1F40C8FC36 /* TGBUsered.h */,
+				D8A4B68DC308A2BA4709B15601577931 /* TGBUsered.m */,
+				FB1FACFD05040502C4BF2FCC89738E35 /* TGBUsered_Internal.h */,
+			);
+			name = User;
+			path = User;
+			sourceTree = "<group>";
+		};
+		AD8F688F890DD36D3B17E17A8ADC7A02 /* libextobjc */ = {
+			isa = PBXGroup;
+			children = (
+				C642338A5260A0CA50221D0143E2DD3E /* TGBEXTScope.h */,
+				BE426F39B890AABC2272F61B71333630 /* TGBEXTScope.m */,
+				9953AC4F8EFECE74423C8135ABC08B34 /* TGBmetamacros.h */,
+			);
+			name = libextobjc;
+			path = libextobjc;
+			sourceTree = "<group>";
+		};
+		B6998BC23EE15411A772D50231E84D33 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7291C712CCFBC8756EE85C587289A92B /* TGBAnyObject */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		D2E2A189745C051DC9E627590175AA9D /* CocoaSecuritys */ = {
+			isa = PBXGroup;
+			children = (
+				661D34C4209C8B68CFF45272D6E27818 /* TGBMessageKit.h */,
+				D7B48479AA47387A802719EE2CD50200 /* TGBMessageKit.m */,
+				E2253BBFAE5338FF095E1DA81F07F80B /* TGBSystemInfo.h */,
+				8E220E95424F7BD926825F83594B0DA7 /* TGBSystemInfo.m */,
+			);
+			name = CocoaSecuritys;
+			path = CocoaSecuritys;
+			sourceTree = "<group>";
+		};
+		D5038B383BD3CD5D8FE4F6D935FEA764 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F4214D1BF0E6532418A74CF4D32C1C5D /* LICENSE */,
+				A0507F21F886A1A4AF39342E51B506BC /* README.md */,
+				580B1E9D59166F151F77CC2B344E651C /* TGBAnyObject.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		DA0FF55A6B8E82A3A47B59F21B805E89 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				50F7E390047526532418303B2189F11C /* TGBSMS.h */,
+				E01615D1E8226DC9B47A7E5AA4A9B097 /* TGBSMS.m */,
+			);
+			name = Private;
+			path = Private;
+			sourceTree = "<group>";
+		};
+		DCDBD5C02058D6F25ACA2C751A3D7827 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				12B8C745A0A52EBE85F0914A045042F3 /* TGBSearchQuery.h */,
+				991FA69ED8EC385C5F94BB97745F6F50 /* TGBSearchQuery.m */,
+				412845155E71148EED07089C6473CD9F /* TGBSearchSortBuilder.h */,
+				7FD00818817B34A7656B188B0C7070DE /* TGBSearchSortBuilder.m */,
+			);
+			name = Public;
+			path = Public;
+			sourceTree = "<group>";
+		};
+		F48A79DBB28E442C50358F6622852906 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E62327582026A63E2B0AFB7C439B6A24 /* Info.plist */,
+				0C867A26DBF1A43B323DD3E50B132593 /* TGBAnyObject.modulemap */,
+				3F2B2AB80937E2A2F7A77C0952621C3D /* TGBAnyObject.xcconfig */,
+				13C9532F765AA6226FC4D20A3F5A1C24 /* TGBAnyObject-dummy.m */,
+				27EC84285127414935E9871C53DA39F0 /* TGBAnyObject-prefix.pch */,
+				938CE6F6AFCCB82E117799F91FCA3C55 /* TGBAnyObject-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TGBAnyObject";
+			sourceTree = "<group>";
+		};
+		F6809175845293CEB6EB733F52E051ED /* Cocoa */ = {
+			isa = PBXGroup;
+			children = (
+				21D0BF0ABCDE322029D0A84C6A26FABC /* TGBInstallation.h */,
+				A539B18786499881A584B88037E4FD7F /* TGBInstallation.m */,
+				0A4ED729217274E2BA87031C5931F24A /* TGBInstallation_Internal.h */,
+				01586250391EFFB7F09D1D5A99410E26 /* TGBPush.h */,
+				D0130FD99AD84DAB423680FA7B96A19A /* TGBPush.m */,
+				793EA2268563298395236534BF2D9065 /* TGBPush_Internal.h */,
+			);
+			name = Cocoa;
+			path = Cocoa;
+			sourceTree = "<group>";
+		};
+		F88DD0A1BD7A6B6E6F4B0A99FC31A844 /* Access */ = {
+			isa = PBXGroup;
+			children = (
+				20F1326B14B7B546E2AE0743E0194C00 /* TGBCaptcha.h */,
+				3A0895E08D114B99AC2D58AFDCAFCE44 /* TGBCaptcha.m */,
+			);
+			name = Access;
+			path = Access;
+			sourceTree = "<group>";
+		};
+		FB97EF0076D9637BAE9BD27E16BB53BA /* submodules */ = {
+			isa = PBXGroup;
+			children = (
+				487FF97CBC1739FA2846071449DE430E /* TGBStatus.h */,
+				1841BAA8E4F29A10BECC713CAA8B63E5 /* TGBStatus.m */,
+			);
+			name = submodules;
+			path = submodules;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4BE08F4A7268DE190CC0787C41909D6F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB2414EF15C6DF0D84F78B2398156FC2 /* TGBACL.h in Headers */,
+				90B1B0950748B28C7A3A333C346C7A08 /* TGBACL_Internal.h in Headers */,
+				EFC181F1208D26EBC8B9AF007C05CA8C /* TGBAnalytics.h in Headers */,
+				3445D269C1456F8A697F939237B164CF /* TGBAnalytics_Internal.h in Headers */,
+				D36B7EC6665504ECAD828B67F8C22213 /* TGBAnalyticsActivity.h in Headers */,
+				D94569210C2C5F362F8543C5E65023AF /* TGBAnalyticsImpl.h in Headers */,
+				0609B0C968181423E9DAA6A229ECB204 /* TGBAnalyticsSession.h in Headers */,
+				8F75B0AB30FD8725AB921A9041ADA11E /* TGBAnalyticsUtils.h in Headers */,
+				94C29DF75E83440FCE167C26F71EA47A /* TGBAnonymousUtils.h in Headers */,
+				2987B76123AB33A49B72A74E1D2F9764 /* TGBAnyObject-umbrella.h in Headers */,
+				26C380798E9329F45A8B4289E8AE65AE /* TGBAnyObject.h in Headers */,
+				F267D272D89DFA5D09B27FEE46282AE0 /* TGBCacheManager.h in Headers */,
+				11983416666A15053401C2A79D87E140 /* TGBCaptcha.h in Headers */,
+				1C660539E9B9AC47D6B01F646E1B4D8E /* TGBCloud.h in Headers */,
+				FEC837E1047FBD2AFEFC90579F1C5FAF /* TGBCloud_Internal.h in Headers */,
+				FEC837E1047FBD2AFEFC90579F1C5FAF /* TGBCloud_Internal.h in Headers */,
+				CF0E973B6F864C092CF8F31B772FAE66 /* TGBCloudQueryResult.h in Headers */,
+				6040902170088132A539FE371685D7DA /* TGBCloudQueryResult_Internal.h in Headers */,
+				684177304A08F0962CE67FD67748B4F0 /* TGBConstants.h in Headers */,
+				05B3120B34BAD45E51ED718D6081CC8C /* TGBDatabase.h in Headers */,
+				1D718F02972D1F269A32C63B49A8A88F /* TGBDatabaseAdditions.h in Headers */,
+				D449DCB7366444385D0810039FAC0A17 /* TGBDatabaseCommon.h in Headers */,
+				9A2F6D43B12B3BE13B21CFCCEB1FA52F /* TGBDatabaseCoordinator.h in Headers */,
+				76EF32DD8D5AD8EA4627D62FD8228661 /* TGBDatabaseMigrator.h in Headers */,
+				10DDE13DCAEA5217ECA54EE941FE2B70 /* TGBDatabasePool.h in Headers */,
+				01DD64ACF582888B1195311E0EFC0FAD /* TGBDatabaseQueue.h in Headers */,
+				F781D1C931FE2DCB6ABF1D558D3B4F5C /* TGBDB.h in Headers */,
+				61C64D5347262078AAD92C09464D04FE /* TGBDuration.h in Headers */,
+				F7B0587D0FDBD402E1C3A0842F4CFD30 /* TGBDynamicObject.h in Headers */,
+				A7732FBC9A81729E4A60928741A054C7 /* TGBDynamicObject_Internal.h in Headers */,
+				D194E497820EC9FD4D368B08232B11C6 /* TGBErrorUtils.h in Headers */,
+				596F90CE18F251F11A1CB5CD5875D1F2 /* TGBExceptionHandler.h in Headers */,
+				4495064E5CCDA7B7D08131133CEBA89A /* TGBEXTScope.h in Headers */,
+				9B2F950F270DD934CEC7C4E8BE377813 /* TGBFile.h in Headers */,
+				67D5F5FF5F09E3ACA5A1D9E6233F7C2E /* TGBFile_Internal.h in Headers */,
+				6B9E3ED1C748FE15CB0848F8704B21EB /* TGBFileQuery.h in Headers */,
+				5E02AB42830049AC5A0C05D9F55096B2 /* TGBFileTaskManager.h in Headers */,
+				5ACF6EAB9CE5BB424CA59ACB53A7B8E8 /* TGBFriendQuery.h in Headers */,
+				FA07E6DB6CD18EE3F3A313EDC4B963AF /* TGBGeoPoint.h in Headers */,
+				F6F05D69547B7DEB629A39C291E8AD69 /* TGBGeoPoint_Internal.h in Headers */,
+				7164A3AC8A8E3A9A72C303DC30FCABB9 /* TGBGlobal.h in Headers */,
+				1640FA98D0329E93379AE090C6B94354 /* TGBHelpers.h in Headers */,
+				7CC5ABE16784B2AFD046FB4E0AD992F5 /* TGBHTTPSessionManager.h in Headers */,
+				390352926F9DB93F600047EC5DDCAB4B /* TGBInstallation.h in Headers */,
+				F65C4DBBA85ABB86B8A37BB1706F9D62 /* TGBInstallation_Internal.h in Headers */,
+				D4740D972E4F33480EE045E2F3EB7CE9 /* TGBKeychain.h in Headers */,
+				1F93E59087B2EF54BB8D81B5DD1FC3F9 /* TGBKeyValueSQL.h in Headers */,
+				52141145B662F31B06E5D49E0D2C6897 /* TGBKeyValueStore.h in Headers */,
+				9AA8DABF2ADDFF7544BF12F5702854E5 /* TGBKKit.h in Headers */,
+				DF7A9350CFA978ED46AB14EB7EE935F2 /* TGBLocationManager.h in Headers */,
+				C665BBA0B78F64127623E92C22FBFF0B /* TGBMacros.h in Headers */,
+				84F35ABE2C27AE5D70FD81B8420E901C /* TGBMessageKit.h in Headers */,
+				B2AB1109F3A6FF85E1B38C65DBA54C01 /* TGBmetamacros.h in Headers */,
+				A4C211FE9A97CC054EAF3143E60175D8 /* TGBNetworking.h in Headers */,
+				31F2481CC285720E3D7E07FAF8B64469 /* TGBNetworkReachabilityManager.h in Headers */,
+				51DC366832E57FBEDABBF4EAE157E183 /* TGBNetworkStatistics.h in Headers */,
+				E9B8C0646DB8024F3F2BAEC5D7B3F917 /* TGBNSDictionary+LCHash.h in Headers */,
+				1E196D7B5AA1367249DA0D00D5919F00 /* TGBNSDictionary+LeanCloud.h in Headers */,
+				F2F276DA26E40883F9DFE047F2E4EED1 /* TGBObject+Subclass.h in Headers */,
+				B291B163AE6B9C2974F8473084DCF7AE /* TGBObject.h in Headers */,
+				A511F3C66CA773FD963529C743BFC527 /* TGBObject_Internal.h in Headers */,
+				B265CE516CE304102607FE6CDA83D388 /* TGBObjectUtils.h in Headers */,
+				280D3D275E82B59120E63E8280FE1FE4 /* TGBOSCloud_Art.inc in Headers */,
+				8A461682BD4FFA483CDA79E6F19D80F5 /* TGBPaasClient.h in Headers */,
+				AB9870E6657BEA355328D2B4F95CDEDA /* TGBPaasClient_internal.h in Headers */,
+				82FC55757366EB83726740DC0E143D5D /* TGBPersistenceUtils.h in Headers */,
+				1ADC30466C5457227DDBFB528B6E51FF /* TGBPush.h in Headers */,
+				02271386F40457A9AF47994DD6214D3D /* TGBPush_Internal.h in Headers */,
+				8077DFF8826A5D6F034024C5898F2E30 /* TGBQuery.h in Headers */,
+				37511FBC2FCF6C0B37F556217CDDEC19 /* TGBQuery_Internal.h in Headers */,
+				F467343D19963057B013BAAA6E935328 /* TGBReachability.h in Headers */,
+				16A2A78581A72068FC90AAB47863DFAF /* TGBRelation.h in Headers */,
+				E6E7C65F3FECD6F04CE28EC4AA9A001F /* TGBRelation_Internal.h in Headers */,
+				0544D0D3AEC65A5BACA888D74ADD6E42 /* TGBRequestManager.h in Headers */,
+				619FABCE594B1C89E540ADD6BB194215 /* TGBRequestOperation.h in Headers */,
+				C11A82C428CB5574D9AA01760597021F /* TGBResultSet.h in Headers */,
+				791573AD1CA81A37688A6160B3E1BE9F /* TGBRole.h in Headers */,
+				3C38EFAAE9D9C8D1370CE0BC4479F7B5 /* TGBRole_Internal.h in Headers */,
+				9F8952BB35CE212D027F646919A06EA9 /* TGBRouter.h in Headers */,
+				0A174B70D3A5F9DA650CB33339FDFBDC /* TGBRouter_Internal.h in Headers */,
+				6A5E96AE151AB3FE91DF903FF03DB79A /* TGBSaveOption.h in Headers */,
+				03345E2525005D095E7842252D1CDD73 /* TGBSaveOption_internal.h in Headers */,
+				010BA7F75D937544C72322C032CE874A /* TGBScheduler.h in Headers */,
+				1B7BA9D93DCC440C9BD7C1467E7D4CB9 /* TGBSearchQuery.h in Headers */,
+				CEBE6267E0CBF1AB7B2ED615B5AB80CF /* TGBSearchSortBuilder.h in Headers */,
+				9AA71EBA08EF106A1A5709E19D455AA2 /* TGBSecurityPolicy.h in Headers */,
+				790A3AA224B851B85ADBAB1F99E8F795 /* TGBSMS.h in Headers */,
+				BCD7D19AAF150F31FF53273966ED2839 /* TGBSSLChallenger.h in Headers */,
+				1E636F51402F695AC43920EF939A24D5 /* TGBStatus.h in Headers */,
+				FC2AC9A95DCB624FF69790761494F77A /* TGBSubclassing.h in Headers */,
+				AD89F6651A1AB4D283A1116DB489976F /* TGBSwizzle.h in Headers */,
+				AD89F6651A1AB4D283A1116DB489976F /* TGBSwizzle.h in Headers */,
+				C40BABECD3CC0517889AAFE5875B749F /* TGBSystemInfo.h in Headers */,
+				F1E8F649CA5543EAC02C932943663631 /* TGBURLConnection.h in Headers */,
+				8057891A18A082194A607602185032D1 /* TGBURLRequestSerialization.h in Headers */,
+				54DF7D528D3441E63522DBE59CBB510B /* TGBURLResponseSerialization.h in Headers */,
+				17237BACB72A4500CF96DFA2D22BE534 /* TGBURLSessionManager.h in Headers */,
+				11C47235D2F30ACBEB78FB314B1D86A7 /* TGBUserAgent.h in Headers */,
+				CD7781C280A42F4EE68AB2DE5C1F7900 /* TGBUsered.h in Headers */,
+				161CB914B26E99D34FC55361EC2B1F83 /* TGBUsered_Internal.h in Headers */,
+				2B879EFB9C2178787D9F94C86845F6DF /* TGBUtils.h in Headers */,
+				93510B6C0BB2B5944D31AAC0676D1833 /* TGBvailability.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A278B01EB333563046C4330DE176B658 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EC075231337EF17BF40C104B2F7752D /* Pods-TGBAnyObject_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBDC82A9854C598FBB7D90187E28199A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30E397F94B4235BF6DCA26A93D546EF4 /* Pods-TGBAnyObject_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B4478264A18AE12E67B39E3FF41A1B96 /* Pods-TGBAnyObject_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC4A1F6D894FD948131675FF9782FF97 /* Build configuration list for PBXNativeTarget "Pods-TGBAnyObject_Tests" */;
+			buildPhases = (
+				DBDC82A9854C598FBB7D90187E28199A /* Headers */,
+				2DA0661A96A6626192F4A1692737B602 /* Sources */,
+				3F1210477BC94F381F188ADDEE6209C0 /* Frameworks */,
+				41BAFA5F253884E1D46DFF1BC8BB3177 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BFF550683D827962C429B37E1CB1CD7 /* PBXTargetDependency */,
+			);
+			name = "Pods-TGBAnyObject_Tests";
+			productName = "Pods-TGBAnyObject_Tests";
+			productReference = 18AE13E54D41DFDE4924E729B173D9D1 /* Pods_TGBAnyObject_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DC4583377DE48A2120F7D437DC5F1000 /* Pods-TGBAnyObject_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2E2D7D7AD88DF7B51B1DD842D9CD825 /* Build configuration list for PBXNativeTarget "Pods-TGBAnyObject_Example" */;
+			buildPhases = (
+				A278B01EB333563046C4330DE176B658 /* Headers */,
+				10547C148D56F2E57F6671ACD241DCE9 /* Sources */,
+				5840E2C8F0C9524F9C0CE8FAA698C514 /* Frameworks */,
+				7DB289B48C936AB322752640F715393B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F71A6ABFD77BD17A30F46CFEFE5DF956 /* PBXTargetDependency */,
+			);
+			name = "Pods-TGBAnyObject_Example";
+			productName = "Pods-TGBAnyObject_Example";
+			productReference = 7FBB8EA4273827385FD9386614F6505A /* Pods_TGBAnyObject_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EBB8234D0D43CC361CF18873F7672B23 /* TGBAnyObject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A2406F19D6B57F5CE266C586CA6C49D /* Build configuration list for PBXNativeTarget "TGBAnyObject" */;
+			buildPhases = (
+				4BE08F4A7268DE190CC0787C41909D6F /* Headers */,
+				34428518F6B366A080A793DB2CB03E36 /* Sources */,
+				2EF0DB0474571143DD714EF26430B434 /* Frameworks */,
+				F7E36F0D55B0913251BA2285B6419C3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TGBAnyObject;
+			productName = TGBAnyObject;
+			productReference = F91BD346679230A948DE52C1701CAB36 /* TGBAnyObject.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 05841024D4F01750C83D6CEEDF119891 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC4583377DE48A2120F7D437DC5F1000 /* Pods-TGBAnyObject_Example */,
+				B4478264A18AE12E67B39E3FF41A1B96 /* Pods-TGBAnyObject_Tests */,
+				EBB8234D0D43CC361CF18873F7672B23 /* TGBAnyObject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41BAFA5F253884E1D46DFF1BC8BB3177 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DB289B48C936AB322752640F715393B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E36F0D55B0913251BA2285B6419C3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10547C148D56F2E57F6671ACD241DCE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2460168263C68CB4532E032D1A30D7 /* Pods-TGBAnyObject_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA0661A96A6626192F4A1692737B602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBEB83BC01D7A03B38B760D1B29D8B96 /* Pods-TGBAnyObject_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34428518F6B366A080A793DB2CB03E36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBE9F41C45B08594649CB111A584639C /* TGBACL.m in Sources */,
+				30DE23ABBC07F150F183F83D854416FB /* TGBAnalytics.m in Sources */,
+				84987CC34C6E5B3E879162A1A60967AB /* TGBAnalyticsActivity.m in Sources */,
+				8FF202308D63C6CBE0315104D144F398 /* TGBAnalyticsImpl.m in Sources */,
+				69175FED713D83921B3A6B2EE0B1D4AF /* TGBAnalyticsSession.m in Sources */,
+				973191BA869E824206BC64EEEE264556 /* TGBAnalyticsUtils.m in Sources */,
+				AB94752D00C274EFD5CDDD8624BEB6D3 /* TGBAnonymousUtils.m in Sources */,
+				28DC1C2832667D19A614A7A788E58D7B /* TGBAnyObject-dummy.m in Sources */,
+				7EC20BEC093D67610E2FA6AF978CA82A /* TGBCacheManager.m in Sources */,
+				94EAD7663B4BB4364670DEC1BD6AD362 /* TGBCaptcha.m in Sources */,
+				5FCCDF4EB76A61B915F8A99975D39BC6 /* TGBCloud.m in Sources */,
+				8CC18A00D67A1946519A180C0EFA1EFB /* TGBCloudQueryResult.m in Sources */,
+				92396BCBDF1B6ED028473D985A7FCC59 /* TGBDatabase.m in Sources */,
+				019C2C6049367EC0732CD770387AA520 /* TGBDatabaseAdditions.m in Sources */,
+				B7B3E1ADF0FD90A7C47874F4622010E1 /* TGBDatabaseCoordinator.m in Sources */,
+				67407CB126A75758CDCBF82693AF62CE /* TGBDatabaseMigrator.m in Sources */,
+				98C955FE4C98D66BC57FF6C1CBFCF35B /* TGBDatabasePool.m in Sources */,
+				B78A5FC16E82819580E611A26A911943 /* TGBDatabaseQueue.m in Sources */,
+				310C4E169DCFACECE694BA94036123F7 /* TGBDuration.m in Sources */,
+				90313B4383275E43AEEB6EF40A88D66F /* TGBDynamicObject.m in Sources */,
+				6BEF1BA9076114B27ED49E607988D008 /* TGBErrorUtils.m in Sources */,
+				214F77568328950C37677EA5180C4132 /* TGBExceptionHandler.m in Sources */,
+				2F71512C0A25CB7C5B3948AB421D60B4 /* TGBEXTScope.m in Sources */,
+				6750A1854AAF6D27B75FD7ABC74ACF33 /* TGBFile.m in Sources */,
+				832ED8FE67865663B7F0506046E069C7 /* TGBFileQuery.m in Sources */,
+				373A7DEB3E111C20E5A766573A4B6EE5 /* TGBFileTaskManager.m in Sources */,
+				284A86E9EB2C2FA64B39FF1142C1CA76 /* TGBFriendQuery.m in Sources */,
+				9BD76B7F3FEB1218B65DE691125EFAEA /* TGBGeoPoint.m in Sources */,
+				31B1B28D726A7D9D3634EA36F0940765 /* TGBHTTPSessionManager.m in Sources */,
+				D577AA51AAC369FE794E872DD3E0E589 /* TGBInstallation.m in Sources */,
+				37F8440B2F6EE0DC816D2136A29D982B /* TGBKeychain.m in Sources */,
+				EE1D8ACB46BD226A3C35499E3755A5EC /* TGBKeyValueStore.m in Sources */,
+				8BBE6BE9B831B49ABC973969F3B9D5F5 /* TGBKKit.m in Sources */,
+				1F40D446E180A8799FEC67CE8A8F2CD8 /* TGBLocationManager.m in Sources */,
+				5ECFA2035773B4C397F7208315F27C84 /* TGBMessageKit.m in Sources */,
+				C39B41E1F7FD8C78E5750FD3346B9E5F /* TGBNetworkReachabilityManager.m in Sources */,
+				77A16AF0809C2725CFDA2494C6458E63 /* TGBNetworkStatistics.m in Sources */,
+				BB03DD788297DE8C37D51F77C4CE3507 /* TGBNSDictionary+LCHash.m in Sources */,
+				8252C8716B307E2D3ADA6C2E753E33D1 /* TGBNSDictionary+LeanCloud.m in Sources */,
+				FDA43FB519E9FF90EEDB259D58CBA333 /* TGBObject.m in Sources */,
+				89BEE9470FB935C52817111D99F05109 /* TGBObjectUtils.m in Sources */,
+				CADF89D30B49A60E05557406062CF70E /* TGBPaasClient.m in Sources */,
+				119B7DC8826C54DD0EF7A0FC65DB3DA9 /* TGBPersistenceUtils.m in Sources */,
+				71BC885F21552896A3BF8A717F7C7837 /* TGBPush.m in Sources */,
+				AB9A212C63325E80B0F1D27C6A97E048 /* TGBQuery.m in Sources */,
+				EB4C36EE57D55E409EA7C21A4B6F4B44 /* TGBReachability.m in Sources */,
+				EF106B765C495213EEAF646320CC4CA9 /* TGBRelation.m in Sources */,
+				3C05C932B10AB657FDD07110CB951FB8 /* TGBRequestManager.m in Sources */,
+				F77F1291F0439FE6AB4688CE291CEC06 /* TGBRequestOperation.m in Sources */,
+				1EBB4BFF9DF8D0234C5F4EE2B8145693 /* TGBResultSet.m in Sources */,
+				E25D47C164E2D4D441ADF146602909C1 /* TGBRole.m in Sources */,
+				D3E474DA46AE7AF13B23A2EA941C0660 /* TGBRouter.m in Sources */,
+				57CA20AECFFCFE67B76FBEC46E1F4710 /* TGBSaveOption.m in Sources */,
+				AC4B4D0D13F0A905CC44428F4B685F08 /* TGBScheduler.m in Sources */,
+				B095925CA289641DB8B9E94DC92FE757 /* TGBSearchQuery.m in Sources */,
+				42A9750060A54BFFFB53560B876A772F /* TGBSearchSortBuilder.m in Sources */,
+				72C33C186CB02774AEEEBA3394F7CA54 /* TGBSecurityPolicy.m in Sources */,
+				C5651DE7A172EDC1800BA936A3D42DCE /* TGBSMS.m in Sources */,
+				8DE282AA9C0436E06DCD0751043EB7AC /* TGBSSLChallenger.m in Sources */,
+				73C1B1EBB5C745E6240DF336E90F9F1E /* TGBStatus.m in Sources */,
+				C3F8605B493DCFCF2279EF79CC23983E /* TGBSwizzle.m in Sources */,
+				C3F8605B493DCFCF2279EF79CC23983E /* TGBSwizzle.m in Sources */,
+				6E4517C7BAAA5629DEF2E878E3600FCF /* TGBSystemInfo.m in Sources */,
+				60CB50A6436D7B31CD64BBC05C6594F8 /* TGBURLConnection.m in Sources */,
+				0E0DAAA906D041DC7DDDBFD3481E50B2 /* TGBURLRequestSerialization.m in Sources */,
+				7F3278A094FB8B44A5DE71E3B92DDB04 /* TGBURLResponseSerialization.m in Sources */,
+				48D72D36137152874EDBD2E10CB7229D /* TGBURLSessionManager.m in Sources */,
+				F0EB349C6FF7E368E0BBBC35EFABC3AA /* TGBUsered.m in Sources */,
+				5371419A6FEA54C1D3AA1C2A9C456836 /* TGBUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BFF550683D827962C429B37E1CB1CD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TGBAnyObject_Example";
+			target = DC4583377DE48A2120F7D437DC5F1000 /* Pods-TGBAnyObject_Example */;
+			targetProxy = AACB84A9E989157ABF0C6503B7B1D329 /* PBXContainerItemProxy */;
+		};
+		F71A6ABFD77BD17A30F46CFEFE5DF956 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TGBAnyObject;
+			target = EBB8234D0D43CC361CF18873F7672B23 /* TGBAnyObject */;
+			targetProxy = 594D29D8981FE72EB0D48EC528528A3F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1082BA1425C9771F1C9F18373EB87805 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DC84391BF5B9CAB737FAFA8E86872CD /* Pods-TGBAnyObject_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TGBAnyObject_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TGBAnyObject_Example/Pods-TGBAnyObject_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		24A763F8B6D5D1D05F3E29B2B69D41D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D42AFCDA90F891DE7C8208049B01F12 /* Pods-TGBAnyObject_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TGBAnyObject_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TGBAnyObject_Tests/Pods-TGBAnyObject_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2DE83DBBA20A174007C6C3011ABBE369 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F2B2AB80937E2A2F7A77C0952621C3D /* TGBAnyObject.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TGBAnyObject/TGBAnyObject-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TGBAnyObject/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TGBAnyObject/TGBAnyObject.modulemap";
+				PRODUCT_MODULE_NAME = TGBAnyObject;
+				PRODUCT_NAME = TGBAnyObject;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6170079614F94D108723F6F85395DA26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79B3D92B2FE8408346901AACDDDC3341 /* Pods-TGBAnyObject_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TGBAnyObject_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TGBAnyObject_Example/Pods-TGBAnyObject_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		85B95B1234E227C814CCC2C7902D0916 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A73625DEBD810B78234FA1958C191C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B219AC9D7F0E1A33864E71315729D71C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C52BF413371CA5D5D83756DC2626395 /* Pods-TGBAnyObject_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TGBAnyObject_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TGBAnyObject_Tests/Pods-TGBAnyObject_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BC2391175008F0DE7FE79E2117D1BA09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F2B2AB80937E2A2F7A77C0952621C3D /* TGBAnyObject.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TGBAnyObject/TGBAnyObject-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TGBAnyObject/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TGBAnyObject/TGBAnyObject.modulemap";
+				PRODUCT_MODULE_NAME = TGBAnyObject;
+				PRODUCT_NAME = TGBAnyObject;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A73625DEBD810B78234FA1958C191C8C /* Debug */,
+				85B95B1234E227C814CCC2C7902D0916 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A2406F19D6B57F5CE266C586CA6C49D /* Build configuration list for PBXNativeTarget "TGBAnyObject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC2391175008F0DE7FE79E2117D1BA09 /* Debug */,
+				2DE83DBBA20A174007C6C3011ABBE369 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2E2D7D7AD88DF7B51B1DD842D9CD825 /* Build configuration list for PBXNativeTarget "Pods-TGBAnyObject_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6170079614F94D108723F6F85395DA26 /* Debug */,
+				1082BA1425C9771F1C9F18373EB87805 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC4A1F6D894FD948131675FF9782FF97 /* Build configuration list for PBXNativeTarget "Pods-TGBAnyObject_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24A763F8B6D5D1D05F3E29B2B69D41D4 /* Debug */,
+				B219AC9D7F0E1A33864E71315729D71C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
