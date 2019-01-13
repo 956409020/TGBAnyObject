@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TGBAnyObject'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of TGBAnyObject.'
+  s.version          = '0.1.1'
+  s.summary          = '万能转换'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+                     here is description.
                        DESC
 
   s.homepage         = 'https://github.com/956409020/TGBAnyObject'
@@ -45,6 +45,6 @@ TODO: Add long description of the pod here.
   #  s.dependency 'FHXEmptyPage'
  
   
-  # s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
+  #  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
   
 end

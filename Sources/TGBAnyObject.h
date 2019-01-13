@@ -11,4 +11,8 @@
 FOUNDATION_EXPORT double TGBAnyObjectVersionNumber;
 FOUNDATION_EXPORT const unsigned char TGBAnyObjectVersionString[];
 
+#import "TGBMessageKit.h"
+
+#import "TGBKKit.h"
+
 #endif /* TGBAnyObject_h */
